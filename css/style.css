@@ -1,0 +1,92 @@
+* {
+    /* Delete the default html space */
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(233, 249, 157);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 22px;
+}
+
+body {
+    /* min-height: 100 vh; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+
+}
+
+header img {
+    padding: 1em 2em;
+    height: 6em;
+    /* box-shadow: 1px -1px 58px -9px rgba(255, 255, 255, 0.61);
+    -webkit-box-shadow: 1px -1px 58px -9px rgba(255, 255, 255, 0.61);
+    -moz-box-shadow: 1px -1px 58px -9px rgba(255, 255, 255, 0.61); */
+}
+
+.main {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.title-container {
+    text-align: center;
+    padding: 1rem;
+    color: rgb(15, 148, 205);
+}
+
+.lesson-container {
+    /* background-color: rgb(189, 199, 236); */
+    padding: 2em 170px;
+    color: rgb(81, 98, 253);
+}
+
+ul{
+    list-style-type: square;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(9, 130, 130);
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h2 {
+    font-family: 'Bungee Spice', cursive;
+}
+
+
+/* fieldset {
+	margin: 1.5rem;
+} */
+span {
+	font-weight: 700;
+}
+#year1 #date1 {
+	color: rgb(255, 255, 255);
+}
+
+.highlight {
+	color: rgb(255, 255, 255);
+}
