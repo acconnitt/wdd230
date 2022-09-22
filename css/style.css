@@ -56,10 +56,18 @@ main {
     /* background-color: rgb(189, 199, 236); */
     padding: 2em 170px;
     color: rgb(81, 98, 253);
+    text-align: center;
 }
 
 ul{
     list-style-type: square;
+    display: inline-block; 
+	text-align: left;    
+}
+
+li{
+    padding: 0.5em;
+    
 }
 
 a {
