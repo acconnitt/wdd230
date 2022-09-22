@@ -21,7 +21,7 @@ header,
 footer {
     background-color: black;
     color: white;
-    padding: 1rem;
+    /* padding: 1rem; */
     text-align: center;
 }
 
@@ -29,11 +29,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 2rem;
     font-size: 2em;
 
 }
 
-header img {
+header video {
     padding: 1em 2em;
     height: 6em;
     /* box-shadow: 1px -1px 58px -9px rgba(255, 255, 255, 0.61);
