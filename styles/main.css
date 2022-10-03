@@ -5,6 +5,7 @@
 }
 
 html {
+    height: 100%;
     background-color: rgb(233, 249, 157);
     font-family: 'Roboto Mono', monospace;
     font-size: 22px;
