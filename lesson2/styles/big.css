@@ -1,25 +1,19 @@
-@media only screen and (min-width:62em)
-{
+@media only screen and (min-width:54em)
+{   
+    /* :root{
 
-    :root{
+        background-color: rgb(255, 183, 0);
+    } */
 
-        background-color: rgb(255, 0, 136);
+    /* .header-container, #p_footer {
+        font-size: 1.5em;
+    }
+    */
+    .grid_col_span3_amazon{
+        grid-column:3;
     }
 
-    header video {
-        height: 15rem;
-    }
 
-    .header-container {
-        display: flex;
-        font-size: 2em;
-    }
-
-    main {
-        font-size: 1.5rem;
-    }
-
-    
 }
 
 

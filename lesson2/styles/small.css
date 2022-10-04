@@ -1,119 +1,123 @@
-@media only screen and (max-width:32.4em) {
+:root {
+    background-color: rgb(0, 0, 0);
+}
 
-    :root {
-        background-color:black;
-    }
+* {
+    /* Delete the default html space */
+    margin: 0;
+    padding: 0;
+}
 
-    * {
-        /* Delete the default html space */
-        margin: 0;
-        padding: 0;
-    }
+body {
+    /* Resolves problems with footer not staying on bottom */
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    min-height: 100vh;
 
-    body {
-        /* Resolves problems with footer not staying on bottom */
-        display: flex;
-        flex-direction: column;
-        min-width: 300px;
-        min-height: 100vh;
+}
 
-    }
+header,
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
 
-    header,
-    footer {
-        background-color: black;
-        color: white;
-        padding: 1rem;
-        text-align: center;
-    }
+.header-container {
+    /* display: flow-root; */
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 1rem 0;
+}
 
-    .header-container {
-        /* display: flow-root; */
-        align-items: center;
-        justify-content: center;
-        padding:0 0 1rem 0;
-    }
+main {
+    /*It helps the footer to be on bottom */
+    flex-grow: 1;
+    background-color: aliceblue;
+}
 
-    main {
-        /*It helps the footer to be on bottom */
-        flex-grow: 1;
-        background-color: aliceblue;
-    }
+.main_grid {
+    display: grid;
+    gap: 2rem;
 
-    img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        padding: 2rem 0;
-    }
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* same as above */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+}
 
-    section {
-        padding: 0 0 2rem 0;
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    padding: 2rem 0;
+}
 
-        color: blueviolet;
-        /* line divides sections */
-        border-bottom: 1rem solid black;
-        padding: 2rem 0;
-    }
-    
-    p {
-        text-align: start;
-        padding: 0 20px;
-    }
+section {
+    padding: 0 0 2rem 0;
 
-    #p_footer{
-        text-align: center;
-    }
+    color: blueviolet;
+    padding: 2rem 0;
 
-    ul {
-        /* list-style-type: square; */
-        display: inline-block;
-        text-align: left;
-    }
+    /* border: .5rem solid black; */
 
-    li {
-        padding: 0.5em;
-        list-style: none;
-    }
+    /* line divides sections */
+    /* border-bottom: 1rem solid black; */
 
-    a {
-        text-decoration: none;
-        color: rgb(9, 130, 130);
-    }
+}
 
-    h1,
-    h2 {
-        font-family: 'Peralta', cursive;
+p {
+    text-align:justify;
+    padding: 0 20px;
+    font-size:1.2rem;
+}
 
-    }
+#p_footer {
+    text-align: center;
+}
 
-    h3 {
-        text-align: right;
-    }
+ul {
+    /* list-style-type: square; */
+    display: inline-block;
+    text-align: left;
+}
 
-    h3,
-    h4 {
-        font-family: 'Source Code Pro', monospace;
-        padding: 0 20px;
-    }
+li {
+    padding: 0.5em;
+    list-style: none;
+}
 
+a {
+    text-decoration: none;
+    color: rgb(9, 130, 130);
+}
 
-    
+h1,
+h2 {
+    font-family: 'Peralta', cursive;
 
+}
 
+h3 {
+    text-align: right;
+}
 
+h3,
+h4 {
+    font-family: 'Source Code Pro', monospace;
+    padding: 0 20px;
+}
 
+/* scriptStyleDate */
+span {
+    font-weight: 700;
+}
 
-    /* scriptStyleDate */
-    span {
-        font-weight: 700;
-    }
+#year1 #date1 {
+    color: rgb(255, 255, 255);
+}
 
-    #year1 #date1 {
-        color: rgb(255, 255, 255);
-    }
-
-    .highlight {
-        color: rgb(255, 255, 255);
-    }
+.highlight {
+    color: rgb(255, 255, 255);
 }

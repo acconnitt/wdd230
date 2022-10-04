@@ -1,25 +1,20 @@
-@media only screen and (min-width:32.5em)
+@media only screen and (min-width:38em)
 {
-
-    :root{
+    /* :root{
 
         background-color: rgb(255, 183, 0);
-    }
+    } */
 
-    header video {
-        height: 15rem;
-    }
+    /* .header-container, #p_footer {
+        font-size: 1.2em;
+    } */
 
-    .header-container {
-        display: flex;
-        font-size: 2em;
-    }
+    /* .grid_col_span1_bmw{
+        border-left: 1rem solid black;
+    } */
 
-    main {
-        font-size: 1.5rem;
+    .grid_col_span3_amazon{
+        grid-column:span 2;
+        /* border-top: 1rem solid black; */
     }
-
-    
 }
-
-
