@@ -1,0 +1,15 @@
+@media only screen and (min-width:32.5em)
+{
+    h1 {
+        font-family: 'Bungee Spice', cursive;
+        font-size: 32.5em;
+    }
+
+    header video {
+        padding: 1em 2em;
+    }
+
+
+}
+
+
