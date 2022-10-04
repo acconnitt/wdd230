@@ -1,0 +1,119 @@
+@media only screen and (max-width:32.4em) {
+
+    :root {
+        background-color:black;
+    }
+
+    * {
+        /* Delete the default html space */
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        /* Resolves problems with footer not staying on bottom */
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+        min-height: 100vh;
+
+    }
+
+    header,
+    footer {
+        background-color: black;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .header-container {
+        /* display: flow-root; */
+        align-items: center;
+        justify-content: center;
+        padding:0 0 1rem 0;
+    }
+
+    main {
+        /*It helps the footer to be on bottom */
+        flex-grow: 1;
+        background-color: aliceblue;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        padding: 2rem 0;
+    }
+
+    section {
+        padding: 0 0 2rem 0;
+
+        color: blueviolet;
+        /* line divides sections */
+        border-bottom: 1rem solid black;
+        padding: 2rem 0;
+    }
+    
+    p {
+        text-align: start;
+        padding: 0 20px;
+    }
+
+    #p_footer{
+        text-align: center;
+    }
+
+    ul {
+        /* list-style-type: square; */
+        display: inline-block;
+        text-align: left;
+    }
+
+    li {
+        padding: 0.5em;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(9, 130, 130);
+    }
+
+    h1,
+    h2 {
+        font-family: 'Peralta', cursive;
+
+    }
+
+    h3 {
+        text-align: right;
+    }
+
+    h3,
+    h4 {
+        font-family: 'Source Code Pro', monospace;
+        padding: 0 20px;
+    }
+
+
+    
+
+
+
+
+
+    /* scriptStyleDate */
+    span {
+        font-weight: 700;
+    }
+
+    #year1 #date1 {
+        color: rgb(255, 255, 255);
+    }
+
+    .highlight {
+        color: rgb(255, 255, 255);
+    }
+}

@@ -1,0 +1,25 @@
+@media only screen and (min-width:62em)
+{
+
+    :root{
+
+        background-color: rgb(255, 0, 136);
+    }
+
+    header video {
+        height: 15rem;
+    }
+
+    .header-container {
+        display: flex;
+        font-size: 2em;
+    }
+
+    main {
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+
