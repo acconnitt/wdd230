@@ -1,0 +1,24 @@
+@media only screen and (min-width:38em) {
+
+    .site-name-container h1 {
+        font-size: 2rem;
+        padding: 2rem 0 0 0;
+    }
+
+    .site-name-container h2 {
+        font-size: 1.8rem;
+        padding: 0 0 3rem 0;;
+    }
+
+    nav,
+    p,
+    footer {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+}

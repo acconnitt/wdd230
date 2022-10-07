@@ -5,7 +5,6 @@
     --title-font: 'Roboto', sans-serif;
     --testing: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 16px;
-    text-decoration: none;
 }
 
 * {
@@ -22,70 +21,72 @@ body {
     /* Limit the with of page */
     min-width: 300px;
     min-height: 100vh;
-
 }
 
 header,
 footer {
-    background-color: rgb(2, 48, 71);
+    background-color:  rgb(2, 48, 71);
     color: rgb(251, 133, 0);
-    text-align: center;
+    text-align: center
 }
 
-.header-container {
-    /* display: flow-root; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    padding: 0 0 3rem 0;
+.site-name-container h1{
+    font-size: 1.4rem;
+    padding: 2rem 0 0 0;
+}
+.site-name-container h2{
+    font-size: 1.3rem;
+    padding: 0 0 3rem 0;;
 }
 
 main {
     /*It helps the footer to be on bottom */
     flex-grow: 1;
     background-color: aliceblue;
-    padding: 2rem 1rem;
+
     width: 100%;
-    height: auto;
+    height: auto;    
+}
+
+.main-container{
+    padding: 2rem 3rem;
 }
 
 nav{
     display: flex;
-    flex-direction: column;
-    justify-content:space-between;
-    align-items: center;
+    /* flex-direction: column; */
+    justify-content: center;
     background-color: aquamarine;
-    font-family:var(--paragraph-font);
+    /* align-items: center; */
+    font-family:var(--title-font);
     font-weight:bolder;
 }
 
 nav ul {
-    /* text-align: center; */
+    /* display: flex; */
+    /* padding: 100%; */
+    
 }
-
 nav ul li {
-    line-height: 5rem;
-    list-style: none;
-    float: left;
-    /* font-size: 19px; */
-    /* text-align: center; */
-}
-
-nav ul li a {
-    /* Makes text a block for better selection/hoover */
+    line-height: 4rem;
     display: block;
-    
+    /* padding: 100%; */
+}
+
+nav ul li a{
+    /* display: block; */
+    padding: 1rem 1rem;
+    font-size: 1rem;
     text-decoration: none;
-    padding: 0 2rem;
-    /* font-weight: bold; */
-    /* text-align: center; */
-    
+    /* width: 100%; */
 }
 
-ul li a:hover {
+nav ul li:hover {
     background-color: white;
+    /* width: 100%; */
 }
 
-h3 {
+h1, h2, h3 {
     color: rgb(255, 183, 3);
 }
 
@@ -98,7 +99,9 @@ img {
     height: auto;
 }
 
-
+footer{
+    padding: 1rem 0;
+}
 
 
 /* scriptStyleDate */
