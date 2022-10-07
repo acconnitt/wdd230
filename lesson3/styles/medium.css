@@ -10,7 +10,7 @@
         padding: 0 0 3rem 0;;
     }
 
-    p {
+    h3, p, li{
         font-size: 1.5rem;
     }
 
@@ -20,3 +20,8 @@
         justify-content: center;
         flex-grow: 1;
     }
+
+    nav ul li {
+        width: 100%;
+    }
+}
