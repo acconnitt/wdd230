@@ -58,7 +58,7 @@ nav {
 
     /* flex-direction: column; */
     justify-content: center;
-    background-color: aquamarine;
+    background-color: rgb(127, 255, 212);
     /* align-items: center; */
     font-family: var(--title-font);
     font-weight: bolder;
@@ -112,7 +112,7 @@ footer{
 
 .p_footer {
     /* padding: 1rem 0; */
-    color: aliceblue;
+    color: rgb(240, 248, 255);
 }
 
 
