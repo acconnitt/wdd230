@@ -101,6 +101,7 @@ li {
 }
 
 img {
+    /* Performance recomendation */
     width: 150px;
     height: 150px;
 }
