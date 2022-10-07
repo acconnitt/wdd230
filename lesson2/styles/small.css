@@ -12,9 +12,9 @@ body {
     /* Resolves problems with footer not staying on bottom */
     display: flex;
     flex-direction: column;
+
     min-width: 250px;
     min-height: 100vh;
-
 }
 
 header,
@@ -48,9 +48,8 @@ main {
 }
 
 img {
-    width: 100%;
+    width: 15rem;
     height: auto;
-    max-width: 100%;
     padding: 2rem 0;
 }
 
