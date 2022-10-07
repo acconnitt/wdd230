@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    /* Limit the with of page */
+    /* Limit the min-with of page */
     min-width: 300px;
     min-height: 100vh;
 }
@@ -55,27 +55,26 @@ main {
 }
 
 nav {
-
-    /* flex-direction: column; */
     justify-content: center;
     background-color: rgb(127, 255, 212);
-    /* align-items: center; */
     font-family: var(--title-font);
     font-weight: bolder;
 }
 
 nav ul li {
-    line-height: 4rem;
     display: block;
 }
 
 nav ul li a {
     /* This display menu full width */
-    display: inline-block;
+    /* display: inline-block; */
 
     font-size: 1rem;
     text-decoration: none;
     color: rgb(2, 48, 71);
+
+    display: block;
+    padding:2rem;
 }
 
 nav ul li:hover {
