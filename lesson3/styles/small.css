@@ -75,21 +75,26 @@ nav ul li a {
 
     font-size: 1rem;
     text-decoration: none;
+    /* color: aliceblue; */
 }
 
 nav ul li:hover {
     background-color: white;
 }
-
-h1,
-h2,
-h3 {
-    color: rgb(255, 183, 3);
+nav ul li a:hover{
+    color: rgb(1, 170, 114);
 }
 
-p,
-li {
-    color: rgb(33, 158, 188);
+h1,
+h2{
+    color: rgb(255, 183, 3);
+}
+h3{
+    color:rgb(20, 91, 84)
+}
+
+p,li {
+    color: rgb(16, 46, 101);
 }
 
 li {
@@ -100,9 +105,13 @@ img {
     width: 35%;
     height: auto;
 }
+footer{
+    padding: 1rem;
+}
 
-footer {
-    padding: 1rem 0;
+.p_footer {
+    /* padding: 1rem 0; */
+    color: aliceblue;
 }
 
 
