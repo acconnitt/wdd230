@@ -53,7 +53,7 @@ main {
 }
 
 nav{
-    display: flex;
+    
     /* flex-direction: column; */
     justify-content: center;
     background-color: aquamarine;
@@ -62,28 +62,21 @@ nav{
     font-weight:bolder;
 }
 
-nav ul {
-    /* display: flex; */
-    /* padding: 100%; */
-    
-}
 nav ul li {
     line-height: 4rem;
     display: block;
-    /* padding: 100%; */
 }
 
 nav ul li a{
-    /* display: block; */
-    padding: 1rem 1rem;
+    /* This display menu full width */
+    display: inline-block;
+
     font-size: 1rem;
     text-decoration: none;
-    /* width: 100%; */
 }
 
 nav ul li:hover {
     background-color: white;
-    /* width: 100%; */
 }
 
 h1, h2, h3 {

@@ -10,16 +10,13 @@
         padding: 0 0 3rem 0;;
     }
 
-    nav,
-    p,
-    footer {
+    p {
         font-size: 1.5rem;
     }
 
     nav ul {
+        /* Nav changes to a single bar */
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         flex-grow: 1;
-        /*  */
     }
-}
