@@ -1,0 +1,138 @@
+:root {
+    background-color: rgb(149, 165, 174);
+    --other-text: 'Lato', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+    --title-font: 'Roboto', sans-serif;
+    --testing: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    /* Delete the default html space */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    /* Resolves problems with footer not staying on bottom */
+    display: flex;
+    flex-direction: column;
+
+    /* Limit the min-with of page */
+    min-width: 300px;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    background-color: rgb(237, 189, 152);
+    color: rgb(251, 133, 0);
+    /* text-align: center; */
+    /* align-items: center; */
+}
+
+footer{
+    padding: 1rem;
+}
+
+ul{
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+    border-radius: 5px;
+    border-color: blue;
+}
+
+li{
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+    border-radius: 5px;
+    border-color: brown;
+}
+
+main{
+    /*It helps the footer to be on bottom */
+    flex-grow: 1;
+    
+    background-color: aliceblue;
+
+    width: 100%;
+    height: auto;
+}
+
+.header-container{
+
+    /* align-items: center;
+    justify-content: space-between; */
+}
+
+.nav-list{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* gap:3rem; */
+    /* display:inline-block; */
+
+    background-color: rgb(127, 255, 212);
+    font-family: var(--title-font);
+    font-weight: bolder;
+
+    display: block;  
+}
+
+.nav-list li{
+    /* flex-grow: 1;
+    flex-shrink: 1; */
+    font-size: 1.5rem;
+    text-align: center;
+
+    padding: 2rem 2rem;
+    
+    
+
+    /* align-items: center; */
+    /* justify-content: center; */
+    
+
+}
+
+.nav-list li a{
+    /* text-decoration: none; */
+    /* justify-content: center; */
+    /* padding: 2rem 0; */
+
+    /* display:        flex; */
+  /* flex-grow:      1; */
+  /* flex-shrink:    1; */
+  /* justify-content: center; */
+  display: block;
+  /* display:100%; */
+    
+    
+}
+
+nav ul:hover{
+    color: rgb(128, 1, 170);
+}
+
+
+
+.logo-cl{
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: rgb(0, 255, 34);
+
+    /* margin: 5rem; */
+    background-color: black;
+    width: 100px; 
+    height: 100px;
+}
+
+

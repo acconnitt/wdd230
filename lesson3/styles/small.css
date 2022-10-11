@@ -30,12 +30,12 @@ footer {
     text-align: center
 }
 
-.site-name-container h1 {
+.title-container h1 {
     font-size: 1.4rem;
     padding: 2rem 0 0 0;
 }
 
-.site-name-container h2 {
+.title-container h2 {
     font-size: 1.3rem;
     padding: 0 0 3rem 0;
     ;
