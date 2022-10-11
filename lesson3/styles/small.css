@@ -44,6 +44,7 @@ footer {
 main {
     /*It helps the footer to be on bottom */
     flex-grow: 1;
+    
     background-color: aliceblue;
 
     width: 100%;
