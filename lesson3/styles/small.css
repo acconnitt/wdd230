@@ -27,7 +27,7 @@ header,
 footer {
     background-color: rgb(2, 48, 71);
     color: rgb(251, 133, 0);
-    text-align: center
+    text-align: center;
 }
 
 .title-container h1 {
