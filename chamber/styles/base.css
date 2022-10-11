@@ -1,5 +1,5 @@
 :root {
-    background-color: rgb(149, 165, 174);
+    background-color: rgb(2, 48, 71);
     --other-text: 'Lato', sans-serif;
     --paragraph-font: 'Open Sans', sans-serif;
     --title-font: 'Roboto', sans-serif;
@@ -11,7 +11,7 @@
     /* Delete the default html space */
     margin: 0;
     padding: 0;
-    list-style: none;
+    text-decoration: none;
 }
 
 body {
@@ -27,16 +27,13 @@ body {
 header,
 footer {
     background-color: rgb(237, 189, 152);
-    color: rgb(251, 133, 0);
-    /* text-align: center; */
-    /* align-items: center; */
 }
 
-footer{
+footer {
     padding: 1rem;
 }
 
-ul{
+/* ul {
     border-top: solid;
     border-left: solid;
     border-right: solid;
@@ -45,29 +42,29 @@ ul{
     border-color: blue;
 }
 
-li{
+li {
     border-top: solid;
     border-left: solid;
     border-right: solid;
     border-bottom: solid;
     border-radius: 5px;
     border-color: brown;
-}
+} */
 
-main{
+main {
     /*It helps the footer to be on bottom */
     flex-grow: 1;
-    
+
     background-color: aliceblue;
 
     width: 100%;
     height: auto;
 }
 
-.header-container{
-
-    /* align-items: center;
-    justify-content: space-between; */
+header,
+footer {
+    background-color: rgb(2, 48, 71);
+    /* text-align: center; */
 }
 
 nav {
@@ -75,59 +72,50 @@ nav {
     background-color: rgb(127, 255, 212);
     font-family: var(--title-font);
     font-weight: bolder;
+    font-size: 2rem;
+    ;
 }
 
-.nav-list{
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* gap:3rem; */
-    /* display:inline-block; */
-
-    /* background-color: rgb(127, 255, 212);
-    font-family: var(--title-font);
-    font-weight: bolder;
-
-    display: block;   */
+nav button {
+    /* margin: 1rem; */
+    background: transparent;
+    border: none;
+    padding: 2rem;
+    color:rgb(2, 48, 71);
 }
 
-.nav-list li{
-    /* flex-grow: 1;
-    flex-shrink: 1; */
+
+.nav-list li {
+    flex-grow: 1;
+    flex-shrink: 1;
     font-size: 1.5rem;
     text-align: center;
 
-    padding:2rem;
-    
-    
-
-    /* align-items: center; */
-    /* justify-content: center; */
-    
-
+    padding: 2rem;
+    border-top: 1px solid rgba(0,0, 0, 0.1);
+    border-bottom: 1px solid rgba(0,0, 0, 0.1);
 }
 
-.nav-list li a{
-    /* text-decoration: none; */
-    /* justify-content: center; */
-    /* padding: 2rem 0; */
-
-    /* display:        flex; */
-  /* flex-grow:      1; */
-  /* flex-shrink:    1; */
-  /* justify-content: center; */
-  display: block;
-  /* display:100%; */
-    
-    
+.nav-list li a {
+    /* Makes whole button link clickable */
+    display: block;
+    color:rgb(2, 48, 71);
+    /* border-top: 2px solid ; */
 }
 
 nav ul li:hover {
-    background-color: white;
+    background-color: aliceblue;
 }
 
+nav ul li.active {
+    background-color: aliceblue;
+}
 
+nav ul li.active a {
+    color: rgb(1, 170, 114);
+}
 
-.logo-cl{
+.logo {
     border-top: solid;
     border-left: solid;
     border-right: solid;
@@ -136,10 +124,7 @@ nav ul li:hover {
     border-width: 5px;
     border-color: rgb(0, 255, 34);
 
-    /* margin: 5rem; */
-    background-color: black;
-    width: 100px; 
-    height: 100px;
+    /* background-color: black; */
+    width: 50px;
+    height: 50px;
 }
-
-
