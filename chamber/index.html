@@ -33,12 +33,19 @@
 
 <body>
     <header class="header-container">
-        <div class="logo">
-            <img src="images/logo.svg" alt="Space Coast Chamber of Commerce logo"></a>
-        </div>
         <nav>
-            <button>&#9776;</button>
-            <ul class="nav-list">
+            <div class="menu-bar">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Space Coast Chamber of Commerce logo">
+                </a>
+
+                <button id="hamburgerBtn">
+                    <span>&#9776;</span>
+                    <span>X</span></span>
+                </button>
+            </div>
+
+            <ul id="primaryNav" , class="nav-list">
                 <li class="active"> <a href="index.html">HOME</a></li>
                 <li> <a href="#">ABOUT</a></li>
                 <li> <a href="#">MEMBERSHIP</a></li>
@@ -60,8 +67,13 @@
     <footer>
     </footer>
 
+    <script src="scripts/script.js">
+    </script>
+
 </body>
 
 
 
 </html>
+
+
