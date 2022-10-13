@@ -25,16 +25,6 @@
     box-sizing: border-box;
 }
 
-/* .content {
-    height: 500vh;
-    background-image: url(//unsplash.it/1000/1000);
-    background-color: #333;
-    background-blend-mode: multiply;
-    background-size: cover;
-    display: grid;
-    place-items: center;
-} */
-
 header {
     background: var(--navigation);
     text-align: center;
@@ -170,11 +160,22 @@ nav ul li:hover {
 
 nav ul li.active {
     background-color: aliceblue;
-    border-style: inset;
+    /* border-style: outset; */
 }
 
 nav ul li.active a {
     color: rgb(1, 170, 114);
+}
+
+.content {
+    height: 100vh;
+    background-color: rgb(48, 47, 47);
+    background-size: cover;
+    display:block;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    color:aliceblue
 }
 
 

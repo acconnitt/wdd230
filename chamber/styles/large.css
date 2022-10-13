@@ -10,7 +10,7 @@
     .logo {
         grid-column: 1/2;
         justify-self: center;
-        width:120px;
+        width: 120px;
         height: auto;
         padding: 2rem 0;
     }
@@ -39,10 +39,11 @@
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px; */
-}
+    }
 
     nav ul li a {
-        display:inline-block;
+        display: inline-block;
         padding: 15px;
+    }
 }
 }
