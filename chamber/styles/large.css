@@ -45,5 +45,72 @@
         display: inline-block;
         padding: 15px;
     }
-}
+
+    .content {
+        /* grid: flex; */
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Hero sect container */
+    .grid-col-span:first-child {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    /* Event sect container */
+    .grid-col-span:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+
+    }
+
+    /* Weather sect container */
+    .grid-col-span:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+    }
+
+    /* News sect container */
+    .grid-col-span:nth-child(4) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+
+    }
+
+    /* Join sect container */
+    .grid-col-span:nth-child(5) {
+        display: block;
+        visibility: visible;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+    }
+
+    /* Spotlights sect container */
+    .grid-col-span:last-child {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 4;
+
+        /* Nested grid in section */
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+        
+    }
+
+    /* Display hidden child */
+    .grid-nested:last-child {
+        display: block;
+        visibility: visible;
+    }
+
+
+
 }

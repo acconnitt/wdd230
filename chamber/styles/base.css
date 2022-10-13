@@ -7,7 +7,7 @@
     --paragraphs: 'Open Sans', sans-serif;
     --titles: 'Roboto', sans-serif;
     --testing: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
+
     /* font-weight: 400; */
     font-size: 16px;
 }
@@ -64,11 +64,6 @@ main {
     height: 100vh;
 }
 
-footer {
-    padding: 2em 1em;
-    background:var(--footer);
-}
-
 .logo {
 
     display: flex;
@@ -82,7 +77,7 @@ footer {
 }
 
 #hamburgerBtn {
-    position:absolute;
+    position: absolute;
     padding: .7rem 1rem;
     font-size: 3rem;
     font-weight: lighter;
@@ -90,13 +85,14 @@ footer {
     background-color: transparent;
     color: var(--footer);
     cursor: pointer;
-    
+
     /* Position */
     right: 0px;
     top: 0px;
 }
 
-#hamburgerBtn, nav ul li {
+#hamburgerBtn,
+nav ul li {
     font-family: var(--nav-text);
     font-weight: bold;
 }
@@ -117,7 +113,7 @@ footer {
     display: block;
 }
 
-span{
+span {
     font-family: var(--nav-text);
     font-weight: bolder;
 }
@@ -147,7 +143,7 @@ nav ul li a {
 
     /* Gives space around */
     padding: 2rem 0;
-    color:var(--footer);
+    color: var(--footer);
 }
 
 nav ul.open {
@@ -168,14 +164,60 @@ nav ul li.active a {
 }
 
 .content {
-    height: 100vh;
-    background-color: rgb(48, 47, 47);
+    display: grid;
+    gap: 2rem;
+
+    /* padding-block: 1rem ,0; */
+    padding: 2rem 0;
+    min-height: 100vh;
+    height: auto;
+    background-color: aliceblue;
     background-size: cover;
-    display:block;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    place-items: center;
-    color:aliceblue
+    border: 2px solid red;
 }
 
+section {
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    min-height: 20rem;
+    height: auto;
+    border: 2px solid rgb(255, 106, 0);
+}
 
+/* Hidding last section */
+.grid-col-span:nth-child(5) {
+    display: none;
+    visibility: hidden;
+}
+
+.grid-nested {
+    padding: 1rem;
+    width: 100%;
+    height: 20rem;
+    border: 2px solid rgb(128, 0, 100);
+}
+
+/* Hidding last spotlight */
+.grid-nested:last-child {
+    display: none;
+    visibility: hidden;
+}
+
+footer{
+    display: flex;
+    gap: 1rem;
+
+    padding: 2em 1em;
+    /* min-height: 100vh; */
+    /* height: auto; */
+    background-color: var(--navigation);
+    /* background-size: cover; */
+    border: 2px solid red;
+    
+
+
+
+    
+    
+}
