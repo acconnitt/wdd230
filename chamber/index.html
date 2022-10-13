@@ -32,32 +32,31 @@
 </head>
 
 <body>
-    <header class="header-container">
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src=" images/logo.svg" alt="Space Coast Chamber of Commerce logo">
+            </a>
+        </div>
+
+
+        <!-- <input type="checkbox" id="nav-toggle" class="nav-toggle"> -->
+        <button id="hamburgerBtn">
+            <span>&#9776;</span>
+            <span>X</span></span>
+        </button>
         <nav>
-            <div class="menu-bar">
-                <a href="index.html">
-                    <img src="images/logo.svg" alt="Space Coast Chamber of Commerce logo">
-                </a>
-
-                <button id="hamburgerBtn">
-                    <span>&#9776;</span>
-                    <span>X</span></span>
-                </button>
-            </div>
-
-            <ul id="primaryNav" , class="nav-list">
+            <ul id="primaryNav", class="nav-list">
                 <li class="active"> <a href="index.html">HOME</a></li>
                 <li> <a href="#">ABOUT</a></li>
-                <li> <a href="#">MEMBERSHIP</a></li>
                 <li> <a href="#">PARTNERS</a></li>
-                <li> <a href="#">EVENTS</a></li>
                 <li> <a href="#">CONTACT</a></li>
             </ul>
         </nav>
-
-        <div class="Title"></div>
-
-    </header>
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+        </label>
+      </header>
 
     <main>
 
@@ -75,5 +74,3 @@
 
 
 </html>
-
-

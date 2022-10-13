@@ -1,9 +1,14 @@
 :root {
-    background-color: rgb(2, 48, 71);
-    --other-text: 'Lato', sans-serif;
-    --paragraph-font: 'Open Sans', sans-serif;
-    --title-font: 'Roboto', sans-serif;
+    /* --background: rgba(127, 255, 212); */
+    --navigation: rgb(127, 255, 212);
+    --footer: rgb(2, 48, 71);
+
+    --nav-text: 'Lato', sans-serif;
+    --paragraphs: 'Open Sans', sans-serif;
+    --titles: 'Roboto', sans-serif;
     --testing: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    /* font-weight: 400; */
     font-size: 16px;
 }
 
@@ -12,25 +17,56 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+
+    /* property allows us to include the 
+    padding and border in an element's 
+    total width and height so the interior
+    never goes beyond specifications */
+    box-sizing: border-box;
 }
 
-body {
-    /* Resolves problems with footer not staying on bottom */
-    display: flex;
-    flex-direction: column;
+/* .content {
+    height: 500vh;
+    background-image: url(//unsplash.it/1000/1000);
+    background-color: #333;
+    background-blend-mode: multiply;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+} */
 
-    /* Limit the min-with of page */
-    min-width: 300px;
-    min-height: 100vh;
-}
 
-header,
-footer {
-    background-color: rgb(237, 189, 152);
-}
 
-footer {
-    padding: 1rem;
+/* navigation styles start here */
+
+header {
+    background: var(--navigation);
+    text-align: center;
+
+    /* position: relative places an element relative to its current 
+    position without changing the layout around it */
+    position: relative;
+
+    /* position: absolute places an element relative to its parent's 
+    position and changing the layout around it */
+    /* position: absolute; */
+
+    /* means it always stays in the same place even if the page is scrolled. */
+    /* position: fixed; */
+
+    /* A sticky element toggles between relative and fixed , depending on 
+    the scroll position. It is positioned relative until a given offset 
+    position is met in the viewport - then it "sticks" in place 
+    (like position:fixed). */
+    /* position: sticky; */
+
+    width: 100%;
+
+    /* CSS property that defines the order 
+    of overlapping HTML elements. Elements 
+    with a higher index will be placed on 
+    top of elements with a lower index */
+    z-index: 100;
 }
 
 main {
@@ -38,52 +74,33 @@ main {
     flex-grow: 1;
 
     background-color: aliceblue;
-
     width: 100%;
-    height: auto;
+    height: 100vh;
 }
 
-header,
 footer {
-    background-color: rgb(2, 48, 71);
-    /* text-align: center; */
-    /* display: flex;
-    justify-content: space-between; */
-}
-
-nav {
-    /* justify-content: center; */
-
-    background-color: rgb(127, 255, 212);
-    font-family: var(--title-font);
-    font-weight: bolder;
-    font-size: 2rem;
-}
-
-nav button {
-    /* Makes whole button link clickable */
-    /* display: inline-block;
-    width: 100%;
-    height: 100%; */
-
-    /* margin: 1rem; */
-
-    background: white;
-    border: none;
-    padding: 1rem;
-
-    /* color: rgb(2, 48, 71); */
-    cursor: pointer;
-
+    padding: 2em 1em;
+    background:var(--footer);
 }
 
 #hamburgerBtn {
-    position: fixed;
+    position:absolute;
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    font-weight: lighter;
+    border-style: none;
+    background-color: transparent;
+    color: var(--footer);
+    cursor: pointer;
+    
+    /* Position */
     right: 0px;
     top: 0px;
-    /* padding: 30px; */
-    /* display: flex;
-    justify-content: space-between; */
+}
+
+#hamburgerBtn, nav ul li {
+    font-family: var(--nav-text);
+    font-weight: bold;
 }
 
 #hamburgerBtn span:nth-child(1) {
@@ -102,35 +119,41 @@ nav button {
     display: block;
 }
 
+span{
+    font-family: var(--nav-text);
+    font-weight: bolder;
+}
+
 nav ul {
     display: none;
     list-style-type: none;
 }
 
-nav ul.open {
-    display: block;
-}
-
-.nav-list li {
+nav ul li {
     flex-grow: 1;
     flex-shrink: 1;
     font-size: 1.5rem;
     text-align: center;
 
-    /* padding: 2rem; */
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* font-family: var(--nav-text);
+    font-weight: bolder; */
 }
 
-.nav-list li a {
+nav ul li a {
     /* Makes whole button link clickable */
-    display: inline-block;
+    display: block;
     width: 100%;
     height: 100%;
 
     /* Gives space around */
     padding: 2rem 0;
-    color: rgb(2, 48, 71);
+    color:var(--footer);
+}
+
+nav ul.open {
+    display: block;
 }
 
 nav ul li:hover {
@@ -146,20 +169,14 @@ nav ul li.active a {
     color: rgb(1, 170, 114);
 }
 
-.menu-bar {
-    /* border-top: solid;
-    border-left: solid;
-    border-right: solid;
-    border-bottom: solid;
-    border-radius: 5px;
-    border-width: 5px;
-    border-color: rgb(0, 255, 34); */
+.logo {
 
-    /* background-color: black; */
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
+
+    /* Align logo to center */
     display: inline-block;
-    width: 80px;
-    height: 80px;
-    padding: 10px 0 10px 20px;
+    width: 120px;
+    height: auto;
+    padding: 5px;
 }
