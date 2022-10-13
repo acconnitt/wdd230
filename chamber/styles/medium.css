@@ -6,6 +6,19 @@ DESKTOP -- 1025px — 1200px: Desktops, large screens...64rem
 LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
 */
 
-@media only screen and (min-width:30rem) {
+@media only screen and (min-width:35rem) {
+
+    #hamburgerBtn {
+        padding: 1rem 1.5rem;
+        font-size: 3.5rem;    
+    } 
+
+    .logo {
+        /* Align logo to left */
+        display: block;
+        width: 120px;
+        height: auto;
+        padding: 10px 20px;
+    }
 
 }

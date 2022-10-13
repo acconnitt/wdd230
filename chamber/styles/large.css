@@ -1,6 +1,48 @@
-@media only screen and (min-width:48rem) {
+@media only screen and (min-width:64rem) {
 
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .logo {
+        grid-column: 1/2;
+        justify-self: center;
+        width:120px;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    #hamburgerBtn {
+        /* Hides hamburger button */
+        display: none;
+    }
+
+    nav {
+        grid-column: 3/6;
+        padding: 4.5rem 2rem;
+    }
+
+    nav ul {
+        display: flex;
+        /* padding: 2rem; */
+    }
+
+    nav ul li {
+        font-size: 1.5rem;
+        border-top: none;
+        border-bottom: none;
+        border-radius: 10px;
+        /* -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px; */
 }
 
-
-
+    nav ul li a {
+        display:inline-block;
+        padding: 15px;
+}
+}
