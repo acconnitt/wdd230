@@ -168,7 +168,7 @@ nav ul li.active a {
     gap: 2rem;
 
     /* padding-block: 1rem ,0; */
-    padding: 2rem 0;
+    padding: 2rem 1em;
     min-height: 100vh;
     height: auto;
     background-color: aliceblue;
@@ -205,15 +205,19 @@ section {
 }
 
 footer{
-    display: flex;
-    gap: 1rem;
-
+    text-align: center;
     padding: 2em 1em;
-    /* min-height: 100vh; */
-    /* height: auto; */
     background-color: var(--navigation);
-    /* background-size: cover; */
-    border: 2px solid red;
-       
-    
+    border: 2px solid rgb(255, 0, 247);    
+}
+
+.logo-footer{
+    display: flex;
+    justify-content: space-between;
+
+    /* Align logo to center */
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    padding: 0 0 25px 0;    
 }

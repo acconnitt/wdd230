@@ -22,7 +22,6 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     }
 
     .content {
-        /* grid: flex; */
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -70,40 +69,22 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
         gap: 0.5em;
     }
 
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        margin: auto;
+    }
+    
+    .footer-col{
+        width: 25%;
+        padding: 0 1rem;
 
-
-
-
-
-
-
-    /* Help div to expand inside sect */
-    /* .grid-sect-div-span{
-        grid-column: span 3;
-        gap: 5rem;
-        border: 2px solid rgb(255, 106, 0);
-        
-    } */
-
-    /* Spotlights div container */
-    /* .grid-sect-div-span {
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(2, 1fr);
+        /* position:absolute; */          
     }
 
-    .grid-sect-div-span:first-child{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    } */
-
-    /* .grid-sect-div-span:last-child{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }  */
+    .copy-right-footer{
+        display: block;
+    }
 
 }
