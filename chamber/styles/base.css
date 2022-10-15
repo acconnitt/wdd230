@@ -75,7 +75,7 @@ main {
     padding: 5px;
 }
 
-#current-date{
+#date2{
     display: flex;
     justify-content: right;
     padding: 1rem;
@@ -178,7 +178,7 @@ nav ul li.active a {
     height: auto;
     background-color: aliceblue;
     background-size: cover;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 section {
@@ -213,7 +213,7 @@ footer{
     text-align: center;
     padding: 1em;
     background-color: var(--navigation);
-    border: 2px solid rgb(255, 0, 247);    
+    /* border: 2px solid rgb(255, 0, 247);     */
 }
 
 .logo-footer{
