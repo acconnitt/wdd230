@@ -26,12 +26,12 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     }
 
     /* Helps section to expand */
-    .grid-col-span{
+    .grid-col-span {
         grid-column: span 3;
     }
 
     /* Event sect container */
-    .grid-col-span:nth-child(2){
+    .grid-col-span:nth-child(2) {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 6;
@@ -39,7 +39,7 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     }
 
     /* Weather sect container */
-    .grid-col-span:nth-child(3){
+    .grid-col-span:nth-child(3) {
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 6;
@@ -47,7 +47,7 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     }
 
     /* News sect container */
-    .grid-col-span:nth-child(4){
+    .grid-col-span:nth-child(4) {
         grid-row-start: 2;
 
     }
@@ -55,7 +55,7 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     /* Join sect container */
     .grid-col-span:nth-child(5) {
         display: block;
-        visibility:visible;
+        visibility: visible;
         grid-row-start: 4;
     }
 
@@ -69,22 +69,31 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
         gap: 0.5em;
     }
 
-    footer{
+    footer {
         display: flex;
         flex-wrap: wrap;
-        text-align: left;
+        text-align: initial;
         margin: auto;
+        /* align-items: stretch; */
+        justify-content: space-evenly;
     }
-    
-    .footer-col{
+
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+
         width: 25%;
-        padding: 0 1rem;
-
-        /* position:absolute; */          
+        padding: 1rem;
+        top: 80px;
     }
 
-    .copy-right-footer{
-        display: block;
+    .logo-footer {
+        width: 70%;
     }
 
+    #author::after {
+        content: "|";
+    }
 }

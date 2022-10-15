@@ -15,6 +15,12 @@
         padding: 2rem 0;
     }
 
+    #current-date{
+        position: fixed;
+        top: 0;
+        right:0;
+    }
+
     #hamburgerBtn {
         /* Hides hamburger button */
         display: none;
@@ -105,7 +111,11 @@
         
     }
 
-    /* Display hidden child */
+    .logo-footer {
+        min-width: 50%;
+        max-width: 50%;
+    }
+
     .grid-nested:last-child {
         display: block;
         visibility: visible;
