@@ -15,10 +15,15 @@
         padding: 2rem 0;
     }
 
+    .social-icon {
+        width: 30%;
+    }
+
     #date2{
-        position: fixed;
-        top: 0;
-        right:0;
+        display: flex;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        justify-content: center;
     }
 
     #hamburgerBtn {

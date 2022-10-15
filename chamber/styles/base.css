@@ -23,9 +23,10 @@
     total width and height so the interior
     never goes beyond specifications */
     box-sizing: border-box;
+    
 }
 
-header {
+header, footer{
     background: var(--navigation);
     text-align: center;
 
@@ -70,15 +71,18 @@ main {
 
     /* Align logo to center */
     display: inline-block;
-    width: 80px;
+    width: 20%;
     height: auto;
-    padding: 5px;
+    padding: 10px;
 }
 
 #date2{
-    display: flex;
-    justify-content: right;
-    padding: 1rem;
+    float:right;
+    padding: .5rem;
+}
+
+.social-icon{
+    width: 10%;
 }
 
 #hamburgerBtn {
@@ -209,27 +213,36 @@ section {
     visibility: hidden;
 }
 
-footer{
+.footer-col{
     text-align: center;
     padding: 1em;
     background-color: var(--navigation);
-    /* border: 2px solid rgb(255, 0, 247);     */
+    /* border: 2px solid rgb(255, 0, 247);  */
+    margin: auto;
+    justify-content: center;   
 }
 
 .logo-footer{
     display: flex;
-    justify-content: space-between;
+    margin: auto;
+    /* justify-content: center; */
 
     /* Align logo to center */
-    display: inline-block;
-    width: 30%;
+    /* display: inline-block; */
+    padding: 1rem;
+    width: 35%;
     height: auto;
-    padding: 0 0 20px 0;    
+    margin-left: auto;
+  margin-right: auto;
 }
+
+
 #copy-right-footer {
-    padding-top: 1.5rem;  
+    /* position: fixed; */
+    padding: 2rem 0;  
     text-align: center;
     font-size: 70%;  
+    background-color: var(--navigation);
 }
 
 #author::after {

@@ -72,20 +72,19 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     footer {
         display: flex;
         flex-wrap: wrap;
-        text-align: initial;
-        margin: auto;
+        /* text-align: initial; */
+        /* margin: auto; */
         /* align-items: stretch; */
         justify-content: space-evenly;
     }
 
     .footer-col {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+       
+        align-items: center;
         align-items: left;
 
         width: 25%;
-        padding: 1rem;
+        padding: .5rem;
         top: 80px;
     }
 
