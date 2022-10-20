@@ -1,0 +1,131 @@
+@media only screen and (min-width:64rem) {
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .logo {
+        grid-column: 1/2;
+        justify-self: center;
+        width: 120px;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .social-icon {
+        width: 30%;
+    }
+
+    #date2{
+        display: flex;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        justify-content: center;
+    }
+
+    #hamburgerBtn {
+        /* Hides hamburger button */
+        display: none;
+    }
+
+    nav {
+        grid-column: 3/6;
+        padding: 4.5rem 2rem;
+    }
+
+    nav ul {
+        display: flex;
+        /* padding: 2rem; */
+    }
+
+    nav ul li {
+        font-size: 1.5rem;
+        border-top: none;
+        border-bottom: none;
+        border-radius: 10px;
+        /* -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px; */
+    }
+
+    nav ul li a {
+        display: inline-block;
+        padding: 15px;
+    }
+
+    .content {
+        /* grid: flex; */
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Hero sect container */
+    .grid-col-span:first-child {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    /* Event sect container */
+    .grid-col-span:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+
+    }
+
+    /* Weather sect container */
+    .grid-col-span:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+    }
+
+    /* News sect container */
+    .grid-col-span:nth-child(4) {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+
+    }
+
+    /* Join sect container */
+    .grid-col-span:nth-child(5) {
+        display: block;
+        visibility: visible;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+    }
+
+    /* Spotlights sect container */
+    .grid-col-span:last-child {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 4;
+
+        /* Nested grid in section */
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+        
+    }
+
+    .logo-footer {
+        min-width: 50%;
+        max-width: 50%;
+    }
+
+    .grid-nested:last-child {
+        display: block;
+        visibility: visible;
+    }
+
+
+
+}

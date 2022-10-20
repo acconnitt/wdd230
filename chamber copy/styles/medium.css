@@ -1,0 +1,98 @@
+/* 
+MOBILE -- 320px — 480px: Mobile devices...
+TABLET -- 481px — 768px: iPads, Tablets...30rem
+LAPTOP -- 769px — 1024px: Small screens, laptops...48rem
+DESKTOP -- 1025px — 1200px: Desktops, large screens...64rem
+LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
+*/
+
+@media only screen and (min-width:35rem) {
+
+    #hamburgerBtn {
+        padding: 1rem 1.5rem;
+        font-size: 3.5rem;
+    }
+
+    .logo {
+        /* Align logo to left */
+        display: block;
+        width: 120px;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Helps section to expand */
+    .grid-col-span {
+        grid-column: span 3;
+    }
+
+    /* Event sect container */
+    .grid-col-span:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 6;
+
+    }
+
+    /* Weather sect container */
+    .grid-col-span:nth-child(3) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 6;
+
+    }
+
+    /* News sect container */
+    .grid-col-span:nth-child(4) {
+        grid-row-start: 2;
+
+    }
+
+    /* Join sect container */
+    .grid-col-span:nth-child(5) {
+        display: block;
+        visibility: visible;
+        grid-row-start: 4;
+    }
+
+    /* Spotlights sect container */
+    .grid-col-span:last-child {
+        grid-row-start: 3;
+
+        /* Nested grid in section */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5em;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        /* text-align: initial; */
+        /* margin: auto; */
+        /* align-items: stretch; */
+        justify-content: space-evenly;
+    }
+
+    .footer-col {
+       
+        align-items: center;
+        align-items: left;
+
+        width: 25%;
+        padding: .5rem;
+        top: 80px;
+    }
+
+    .logo-footer {
+        width: 70%;
+    }
+
+    #author::after {
+        content: "|";
+    }
+}
