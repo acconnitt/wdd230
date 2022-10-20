@@ -79,10 +79,6 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     }
 
     .footer-col {
-       
-        align-items: center;
-        align-items: left;
-
         width: 25%;
         padding: .5rem;
         top: 80px;
