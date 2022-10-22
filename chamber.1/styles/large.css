@@ -29,7 +29,7 @@
 
     nav {
         position: absolute;
-        top: 3rem;
+        top: 3.5rem;
         right: 2rem;
     }
 
@@ -45,7 +45,7 @@
     }
 
     nav ul li a {
-        padding: 15px;
+        padding: 10px 15px;
     }
 
     .content {
