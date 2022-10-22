@@ -13,6 +13,17 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
         font-size: 3.5rem;
     }
 
+    .facebook-icon,
+    .instagram-icon {
+        left: 40% ;
+        width: 6rem;
+        /* max-width: 150%; */
+    }
+
+    .instagram-icon {
+        left: 50%;
+    }
+
     .logo {
         /* Align logo to left */
         display: block;

@@ -2,7 +2,7 @@
     /* --background: rgba(127, 255, 212); */
     --navigation: rgb(127, 255, 212);
     --footer: rgb(2, 48, 71);
-    --yellow: rgb(255,183,6);
+    --yellow: rgb(255, 183, 6);
 
     --nav-text: 'Lato', sans-serif;
     --paragraphs: 'Open Sans', sans-serif;
@@ -24,12 +24,14 @@
     total width and height so the interior
     never goes beyond specifications */
     box-sizing: border-box;
-    
+
 }
 
-header, footer{
+header,
+footer {
     background: var(--navigation);
     text-align: center;
+    position: relative;
 
     /* position: relative places an element relative to its current 
     position without changing the layout around it */
@@ -77,19 +79,27 @@ main {
     padding: 10px;
 }
 
-#date2{
-    float:right;
+#date2 {
+    float: right;
     padding: .5rem;
 }
 
-.social-icon{
-    width: 10%;
+.facebook-icon,
+.instagram-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 4rem;
+}
+
+.instagram-icon {
+    left: 3rem;
 }
 
 #hamburgerBtn {
     position: absolute;
-    padding: .7rem 1rem;
-    font-size: 3rem;
+    padding: 1rem;
+    font-size: 2.5rem;
     font-weight: lighter;
     border-style: none;
     background-color: transparent;
@@ -214,16 +224,16 @@ section {
     visibility: hidden;
 }
 
-.footer-col{
+.footer-col {
     text-align: center;
     padding: 1em;
     background-color: var(--navigation);
     /* border: 2px solid rgb(255, 0, 247);  */
     margin: auto;
-    justify-content: center;   
+    justify-content: center;
 }
 
-.logo-footer{
+.logo-footer {
     display: flex;
     margin: auto;
     /* justify-content: center; */
@@ -234,15 +244,15 @@ section {
     width: 35%;
     height: auto;
     margin-left: auto;
-  margin-right: auto;
+    margin-right: auto;
 }
 
 
 #copy-right-footer {
     /* position: fixed; */
-    padding: 2rem 0;  
+    padding: 2rem 0;
     text-align: center;
-    font-size: 70%;  
+    font-size: 70%;
     background-color: var(--navigation);
 }
 

@@ -20,6 +20,7 @@
     }
 
     #date2{
+        position: relative;
         display: flex;
         grid-column-start: 2;
         grid-column-end: 5;
@@ -125,7 +126,4 @@
         display: block;
         visibility: visible;
     }
-
-
-
 }
