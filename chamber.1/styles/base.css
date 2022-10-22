@@ -175,12 +175,12 @@ nav ul li:hover {
 }
 
 nav ul li.active {
-    background-color: aliceblue;
+    background-color: var(--yellow);
     /* border-style: outset; */
 }
 
 nav ul li.active a {
-    color: rgb(1, 170, 114);
+    color: aliceblue;
 }
 
 .content {
