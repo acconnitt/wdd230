@@ -23,7 +23,6 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     }
 
     .logo {
-        /* Align logo to left */
         display: block;
         width: 120px;
         padding: 10px 20px;
