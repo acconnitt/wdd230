@@ -175,7 +175,7 @@ nav ul li:hover {
 }
 
 nav ul li.active {
-    background-color: var(--yellow);
+    background-color: var(--footer);
     /* border-style: outset; */
 }
 
