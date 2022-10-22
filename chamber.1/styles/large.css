@@ -15,14 +15,23 @@
         padding: 20px;
     }
 
-    .social-icon {
-        width: 30%;
+    .facebook-icon,
+    .instagram-icon {
+        position: absolute;
+        top: 0;
+        left: 65%;
+        padding: 10px;
+    }
+
+    .instagram-icon {
+        left: 70%;
     }
 
     #date2 {
         position: absolute;
         top: 0;
         right: 0;
+        padding: 15px 20px;
 
     }
 
@@ -48,7 +57,7 @@
         border-top: none;
         border-bottom: none;
         border-radius: 10px;
-        
+
     }
 
     nav ul li a {
