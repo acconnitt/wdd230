@@ -15,9 +15,7 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
 
     .facebook-icon,
     .instagram-icon {
-        left: 40% ;
-        width: 6rem;
-        /* max-width: 150%; */
+        left: 40%;
     }
 
     .instagram-icon {
