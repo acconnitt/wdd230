@@ -171,16 +171,16 @@ nav ul.open {
 }
 
 nav ul li:hover {
-    background-color: aliceblue;
+    background-color: var(--yellow);
 }
 
 nav ul li.active {
-    background-color: var(--footer);
+    background-color: aliceblue;
     /* border-style: outset; */
 }
 
 nav ul li.active a {
-    color: aliceblue;
+    color: var(--footer);
 }
 
 .content {
