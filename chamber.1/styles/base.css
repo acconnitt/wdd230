@@ -206,7 +206,7 @@ nav ul li.active a {
 
 section {
     display: flex;
-    /* padding: 1rem; */
+    padding: 1rem;
     width: 100%;
     min-height: 10rem;
     height: auto;
@@ -237,7 +237,12 @@ section {
     object-position: right;
 }
 
-/* Hidding last section */
+
+.grid-col-span:first-child {
+    padding: 0;
+}
+
+/* Hiding last section */
 .grid-col-span:nth-child(5) {
     display: none;
     visibility: hidden;
@@ -250,7 +255,8 @@ section {
     border: 2px solid rgb(128, 0, 100);
 }
 
-/* Hidding last spotlight */
+/* Hiding last spotlight 
+Join section*/
 .grid-nested:last-child {
     display: none;
     visibility: hidden;
@@ -268,7 +274,6 @@ section {
 .logo-footer {
     display: flex;
     margin: auto;
-    /* justify-content: center; */
 
     /* Align logo to center */
     /* display: inline-block; */
@@ -281,7 +286,6 @@ section {
 
 
 #copy-right-footer {
-    /* position: fixed; */
     padding: 2rem 0;
     text-align: center;
     font-size: var(--fs-400);
