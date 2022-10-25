@@ -8,6 +8,10 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
 
 @media only screen and (min-width:35rem) {
 
+    .banner{
+        font-size:var(--fs-500);
+    }
+
     #hamburgerBtn {
         padding: 1rem 1.5rem;
         font-size: 3.5rem;
@@ -35,6 +39,10 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     /* Helps section to expand */
     .grid-col-span {
         grid-column: span 3;
+    }
+
+    .grid-col-span h1 {
+        font-size:x-large;
     }
 
     /* Event sect container */

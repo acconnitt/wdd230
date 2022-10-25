@@ -11,6 +11,7 @@ x.onclick = toggleMenu;
 
 
 
+
 // DATE FOR FOOTER
 // Select the HTML element to manipulate
 const year1 = document.querySelector("#year1")
@@ -35,6 +36,10 @@ catch (e) {
 }
 
 
+
+
+
+
 // DATE FOR HEADER
 const date2 = document.querySelector("#date2");
 try {
@@ -57,60 +62,21 @@ catch (e) {
 
 
 
-// Long hand method ... building day and month names from built-in date methods.
-const daynames = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-];
-const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-];
-const d = new Date();
-const dayName = daynames[d.getDay()];
-const monthName = months[d.getMonth()];
-const year = d.getFullYear();
-const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
-document.querySelector("#year1").textContent = `${year}`;
+// Display banner on page only on 
+// Monday and Tuesdays 
+var currentDate = new Date();
+var dayOfWeek = currentDate.getDay();
 
+// DISPLAY BANNER
+function weeklyBanner() {
 
+    if (dayOfWeek === 1 || dayOfWeek === 2){
+        // Calling banner id  #banner 
+        banner.style.display = "block";        
+    }
+    else{
+        banner.style.display = "none";
+    }
+}
 
-// var currentDate = new Date();
-// var months = currentDate.getMonth();
-// var days = currentDate.getDate();
-// var years = currentDate.getFullYear();
-// var fullDate = months + '-' + days + '-' + years;
-// document.write(fullDate());
-
-
-// const timeElement = document.querySelector(".date")
-
-// //
-// function formatDate(date) {
-//     const days = [
-//         "Sunday",
-//         "Monday",
-//         "Tuesday",
-//         "Wednesday",
-//         "Thursday",
-//         "Friday",
-//         "Saturday"
-// }
-
-
-
+weeklyBanner();

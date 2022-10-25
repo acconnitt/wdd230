@@ -1,5 +1,9 @@
 @media only screen and (min-width:64rem) {
 
+    #banner{
+        font-size:var(--fs-600);
+    }
+
     .logo {
         width: 150px;
         height: auto;
@@ -38,7 +42,7 @@
     }
 
     nav ul li {
-        font-size: 1.5rem;
+        font-size: --fs-600;
         border-top: none;
         border-bottom: none;
         border-radius: 10px;
@@ -50,6 +54,10 @@
 
     .content {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .grid-col-span h1 {
+        font-size:xx-large;
     }
 
     /* Hero sect container */
