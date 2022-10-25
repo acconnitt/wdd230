@@ -286,7 +286,7 @@ Join section*/
 
 
 #copy-right-footer {
-    padding: 2rem 0;
+    padding: 2rem;
     text-align: center;
     font-size: var(--fs-400);
     background-color: var(--navigation);
