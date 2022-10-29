@@ -274,7 +274,9 @@ Join section*/
     /* Align logo to center */
     /* display: inline-block; */
     padding: 1rem;
-    width: 35%;
+    min-width: 8rem;
+    max-width: 10rem;
+    align-items: center;
 }
 
 
