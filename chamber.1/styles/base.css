@@ -10,7 +10,8 @@
     --testing: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
     font-weight: 400;
-    /* font-size: 16px; */
+    font-size: 16px;
+    min-width: 300px;
 
     --fs-xl: 5rem;
     --fs-600: 2rem;
@@ -32,18 +33,20 @@
 
 }
 
-#banner{
+#banner {
     padding: 1rem;
     text-align: center;
     width: 100%;
     font-family: var(--nav-text);
-    font:1rem;
+    font: 1rem;
     text-transform: uppercase;
+    font-size: var(--fs-400);
 }
 
 header,
 footer {
     background: var(--navigation);
+    width: 100%;
     text-align: center;
     position: relative;
 
@@ -86,7 +89,7 @@ main {
     /* Align logo to center */
     width: 80px;
     height: auto;
-    padding: 10px;       
+    padding: 10px;
 }
 
 h1 {
@@ -94,25 +97,27 @@ h1 {
     font-size: 16px;
     text-align: left;
     color: var(--footer);
-    top: 10px;
+    top: 4px;
     left: 95px;
 }
 
 #date2 {
     float: right;
-    padding: .5rem;
+    padding: .5rem 1rem;
+    top: 10px;
+    right: 100px;
 }
 
 .facebook-icon,
 .instagram-icon {
     position: absolute;
     top: 83px;
-    left: 10px;
-    width: 3.5rem;
+    left: 0;
+    width: 3rem;
 }
 
 .instagram-icon {
-    left: 3rem;
+    left: 30px;
 }
 
 #hamburgerBtn {
@@ -168,8 +173,6 @@ nav ul li {
 
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    /* font-family: var(--nav-text);
-    font-weight: bolder; */
 }
 
 nav ul li a {
@@ -227,9 +230,9 @@ section {
 
 .img1 {
     width: 100%;
-    height: auto;
+    /* height: auto; */
     object-fit: cover;
-    object-position: right;
+    /* object-position: right; */
 }
 
 

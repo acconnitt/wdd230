@@ -1,7 +1,7 @@
 @media only screen and (min-width:64rem) {
 
     #banner{
-        font-size:var(--fs-600);
+        font-size:var(--fs-500);
     }
 
     .logo {
@@ -18,12 +18,12 @@
 
     .facebook-icon,
     .instagram-icon {
-        top: 5px;
-        left: 67%;
+        top: .5rem;
+        left:67.5%;
     }
 
     .instagram-icon {
-        left: 71%;
+        left: 70%;
     }
 
     #date2 {
