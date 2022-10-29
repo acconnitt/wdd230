@@ -19,17 +19,19 @@
     .facebook-icon,
     .instagram-icon {
         top: .5rem;
-        left:67.5%;
+        left:52%;
+        width: 4rem;
     }
 
     .instagram-icon {
-        left: 70%;
+        left: 55%;
     }
 
     #date2 {
         position: absolute;
         top: .5rem;
         right: 2.5rem;
+        font-size:1.3rem;
     }
 
     #hamburgerBtn {
