@@ -120,8 +120,9 @@
     }
 
     .logo-footer {
-        min-width: 50%;
-        max-width: 50%;
+        width: 15px;
+        height: auto;
+        padding: 20px;
     }
 
     .grid-nested:last-child {
