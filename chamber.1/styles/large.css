@@ -10,6 +10,12 @@
         padding: 20px;
     }
 
+    h1 {
+        font-size: 1.2rem;
+        top: 30px;
+        left: 150px;
+    }
+
     .facebook-icon,
     .instagram-icon {
         top: 5px;

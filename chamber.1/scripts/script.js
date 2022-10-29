@@ -70,7 +70,7 @@ var dayOfWeek = currentDate.getDay();
 // DISPLAY BANNER
 function weeklyBanner() {
 
-    if (dayOfWeek === 1 || dayOfWeek === 2){
+    if (dayOfWeek === 6 || dayOfWeek === 2){
         // Calling banner id  #banner 
         banner.style.display = "block";        
     }

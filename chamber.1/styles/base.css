@@ -84,10 +84,18 @@ main {
 
 .logo {
     /* Align logo to center */
-    display: inline-block;
     width: 80px;
     height: auto;
-    padding: 10px;
+    padding: 10px;       
+}
+
+h1 {
+    position: absolute;
+    font-size: 16px;
+    text-align: left;
+    color: var(--footer);
+    top: 10px;
+    left: 95px;
 }
 
 #date2 {
@@ -98,9 +106,9 @@ main {
 .facebook-icon,
 .instagram-icon {
     position: absolute;
-    top: 10px;
+    top: 83px;
     left: 10px;
-    width: 4rem;
+    width: 3.5rem;
 }
 
 .instagram-icon {
@@ -215,19 +223,6 @@ section {
 
 .grid-col-span {
     position: relative;
-}
-
-.grid-col-span h1 {
-    position: absolute;
-    width: auto;
-    text-align: center;
-    font-size:large;
-    color: rgb(255, 255, 255);
-    bottom: 0;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
-    padding: 0 2rem;
-    background: #333333d1;
 }
 
 .img1 {
