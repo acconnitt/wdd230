@@ -119,12 +119,6 @@
         gap: 0.5em;
     }
 
-    .logo-footer {
-        width: 15px;
-        height: auto;
-        padding: 20px;
-    }
-
     .grid-nested:last-child {
         display: block;
         visibility: visible;
