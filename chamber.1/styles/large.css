@@ -50,7 +50,7 @@
     }
 
     nav ul li {
-        font-size: --fs-600;
+        font-size: var(--fs-600);
         border-top: none;
         border-bottom: none;
         border-radius: 10px;
