@@ -17,16 +17,14 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
         font-size: 3.5rem;
     }
 
-    /* .facebook-icon,
+    .facebook-icon,
     .instagram-icon {
-        top: 105px;
-        left: 1rem;
+        width: 3rem;
     }
 
-    .instagram-icon {
-        left: 3rem;
-    } */
-
+    #date2{
+        font-size: 1rem;
+    }
     .logo {
         display: block;
         width: 120px;

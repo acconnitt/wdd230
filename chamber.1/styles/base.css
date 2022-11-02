@@ -106,22 +106,18 @@ h1 {
     background-color: white;
 }
 
-#date2 {
-    float: right;
-    padding: .5rem 1rem;
-    top: 10px;
-    right: 100px;
-}
-
 .facebook-icon,
 .instagram-icon {
     float: left;
-    width: 3rem;
-    right: 10px;
+    width: 2.5rem;
 }
 
-.instagram-icon {
-    left: 30px;
+#date2 {
+    font-size: 12px;
+    float: right;
+    padding: .5rem;
+    top: 10px;
+    right: 100px;
 }
 
 #hamburgerBtn {
