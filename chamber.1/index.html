@@ -14,7 +14,9 @@
 
     <meta name="keywords" content="chamber commerce, space coast, business owners, community, unity">
 
+
     <link rel="shortcut icon" href="images/favicon.ico">
+
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -99,9 +101,21 @@
         <section class="grid-col-span">
             <h2>Weather</h2>
             <br>
-            <p>Current Temperature: 50 F</p>
-            <p>Wind Speed: 6</p>
-            <p>Wind Child: 30</p>
+            <p>Current Temperature: 
+                <span id="temp"></span>
+                <!-- <span id="date2"></span> -->
+            </p>
+            <br>
+
+            <p>Wind Speed:
+                <span id="windSpeed"></span> 
+            </p>
+            <br>
+
+            <p>Wind Child:
+                <span id="feelsLike"></span>
+            </p>
+
         </section>
 
         <section class="grid-col-span">
@@ -179,6 +193,7 @@
     </footer>
 
     <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 </body>
 
