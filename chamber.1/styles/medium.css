@@ -113,4 +113,12 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     #author::after {
         content: "|";
     }
+
+    /* Force an element not to collapse */
+    .clearfix:after{
+        content:"";
+        display:table;
+        clear:both;
+
+    }
 }
