@@ -87,9 +87,10 @@ main {
 
 .logo {
     /* Align logo to center */
-    width: 80px;
+    width: 100px;
     height: auto;
-    padding: 10px;
+    display: block;
+    padding: 10px 20px;
 }
 
 h1 {
@@ -101,6 +102,10 @@ h1 {
     left: 95px;
 }
 
+.social-icon {
+    background-color: white;
+}
+
 #date2 {
     float: right;
     padding: .5rem 1rem;
@@ -110,11 +115,9 @@ h1 {
 
 .facebook-icon,
 .instagram-icon {
-    
-    position: absolute;
-    top: 83px;
-    left: 0;
+    float: left;
     width: 3rem;
+    right: 10px;
 }
 
 .instagram-icon {

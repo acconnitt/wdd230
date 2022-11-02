@@ -16,23 +16,25 @@
         left: 150px;
     }
 
-    .facebook-icon,
-    .instagram-icon {
-        top: .5rem;
+    .facebook-icon{
+        /* top: .5rem;
         left:52%;
-        width: 4rem;
+        width: 4rem; */
+        float:right; 
+        /* clear:right; */
     }
 
     .instagram-icon {
-        left: 55%;
+        /* left: 55%; */
+        /* float: right; */
     }
 
-    #date2 {
+    /* #date2 {
         position: absolute;
         top: .5rem;
         right: 2.5rem;
         font-size:1.3rem;
-    }
+    } */
 
     #hamburgerBtn {
         /* Hides hamburger button */
@@ -50,7 +52,7 @@
     }
 
     nav ul li {
-        font-size: var(--fs-600);
+        font-size: var(--fs-500);
         border-top: none;
         border-bottom: none;
         border-radius: 10px;
@@ -58,6 +60,7 @@
 
     nav ul li a {
         padding: 10px 15px;
+        /* font-size:x-large; */
     }
 
     .content {
