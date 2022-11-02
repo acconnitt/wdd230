@@ -16,17 +16,13 @@
         left: 150px;
     }
 
-    .facebook-icon{
-        /* top: .5rem;
-        left:52%;
-        width: 4rem; */
-        float:right; 
-        /* clear:right; */
-    }
+    /* .social-icons {
+        float: right;
+    } */
 
+    .facebook-icon,
     .instagram-icon {
-        /* left: 55%; */
-        /* float: right; */
+        float: right;
     }
 
     /* #date2 {
