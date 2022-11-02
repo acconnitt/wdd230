@@ -63,10 +63,6 @@
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .grid-col-span h1 {
-        font-size:xx-large;
-    }
-
     /* Hero sect container */
     .grid-col-span:first-child {
         grid-column-start: 2;
