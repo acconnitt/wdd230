@@ -85,10 +85,10 @@
     <main class="content">
         <div class="grid-col-span">
             <picture>
-                <source srcset="images/wdd230-laptop.webp" media="(min-width:1024px)">
-                <source srcset="images/wdd230-tablet.webp" media="(min-width:560px)">
-                <!-- <source srcset="images/wdd230-mobile.webp" media="(min-width:559px"> -->
-                <img class="img1" src="images/wdd230-mobile.webp" alt="meeting">
+                <source srcset="images/wdd230-mobile.jpg" media="(max-width:559px)">
+                <source srcset="images/wdd230-tablet.jpg" media="(min-width:560px) and (max-width:1023px)">
+                <source srcset="images/wdd230-laptop.jpg" media="(min-width:1024px)">
+                <img class="img1" src="images/wdd230-laptop.jpg" alt="meeting">
             </picture>
         </div>
 
@@ -101,14 +101,14 @@
         <section class="grid-col-span">
             <h2>Weather</h2>
             <br>
-            <p>Current Temperature: 
+            <p>Current Temperature:
                 <span id="temp"></span>
                 <!-- <span id="date2"></span> -->
             </p>
             <br>
 
             <p>Wind Speed:
-                <span id="windSpeed"></span> 
+                <span id="windSpeed"></span>
             </p>
             <br>
 
@@ -162,7 +162,7 @@
         </div>
 
         <div class="footer-col">
-            <h4>Space Coast Chamber of Commerce</h4>
+            <h3>Space Coast Chamber of Commerce</h3>
             <br>
             <p class="address">
                 123 Address<br>
@@ -192,8 +192,8 @@
         </div>
     </footer>
 
-    <script src="scripts/script.js" defer></script>
-    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 </body>
 
