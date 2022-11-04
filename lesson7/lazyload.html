@@ -15,31 +15,42 @@
         <h1>Progressive Loading of Images</h1>
 
         <picture>
-            <img class="images" loading="lazy" src="https://picsum.photos/300.webp?random=1">
-            <br>
-
-            <img class="images" loading="lazy" src="https://picsum.photos/300.webp?random=2">
-            <br>
-
-            <img class="images" loading="lazy" src="https://picsum.photos/300.webp?random=3">
-            <br>
+            <!-- src will load first as placeholder and will be replace by data-src -->
+            <!-- We can remove the src to just make the squared background color  from css to be a placeholder -->
             
-            <img class="images" loading="lazy" src="https://picsum.photos/300.webp?random=4">
+            <!-- Dominant Color Placeholder using tr=w-1,h-1-->
+            <img class="lazy" loading="lazy" src="https://ik.imagekit.io/demo/img/image4.jpeg?tr=w-1,h-1:w-300,h-400"
+                data-src="https://ik.imagekit.io/demo/img/image4.jpeg?tr=w-300,h-400" alt="random image">
             <br>
 
-            <img class="images" loading="lazy" src="https://picsum.photos/300.webp?random=5">
+            <!-- Low Quality Image Placeholder (LQIP) bl-30,q-50 -->
+            <img class="lazy" loading="lazy" src="https://ik.imagekit.io/demo/img/image4.jpeg?tr=w-300,h-400,bl-30,q-50"
+                data-src="https://ik.imagekit.io/demo/img/image4.jpeg?tr=w-300,h-400" alt="random image">
             <br>
-            
-            <img class="images" loading="lazy" src="https://picsum.photos/300.webp?random=6">
+
+            <img class="lazy" loading="lazy" src="https://picsum.photos/300/400.webp/?random=1"
+                data-src="https://picsum.photos/300/400.webp/?random=3" alt="random image">
             <br>
-            </picture>
+
+            <img class="lazy" loading="lazy"
+                data-src="https://picsum.photos/300/400.webp/?random=4" alt="random image">
+            <br>
+
+            <img class="lazy" loading="lazy"
+                data-src="https://picsum.photos/300/400.webp/?random=5" alt="random image">
+            <br>
+
+            <img class="lazy" loading="lazy" 
+                data-src="https://picsum.photos/300/400.webp/?random=6" alt="random image">
+            <br>
+        </picture>
         <br>
 
 
 
     </main>
 
-    <script src="scripts/script.js"></script>
+    <script defer src="scripts/script.js"></script>
 
 </body>
 
