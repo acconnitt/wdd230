@@ -120,7 +120,6 @@
     /* ************** */
     
     .grid-col-span-discover, .grid-col-span-discover p {
-
         grid-column-start: 2;
         grid-column-end: 4;
         text-align: center;

@@ -306,7 +306,7 @@ The Join section*/
     margin: 1rem;
 }
 
-.lazy-loading {
+.lazy {
     margin: 1rem;
     
     /* serve as placeholder while loading real image */
