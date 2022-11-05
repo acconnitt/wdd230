@@ -33,56 +33,56 @@
 
 
 
-// Method 2: Trigger the image load using the Intersection Observer API
-document.addEventListener("DOMContentLoaded", function () {
-  var lazyloadImages;
+// // Method 2: Trigger the image load using the Intersection Observer API
+// document.addEventListener("DOMContentLoaded", function () {
+//   var lazyloadImages;
 
-  if ("IntersectionObserver" in window) {
-    lazyloadImages = document.querySelectorAll(".lazy");
-    var imageObserver = new IntersectionObserver(function (entries, observer) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          var image = entry.target;
-          image.src = image.dataset.src;
-          image.classList.remove("lazy");
-          imageObserver.unobserve(image);
-        }
-      });
-    });
+//   if ("IntersectionObserver" in window) {
+//     lazyloadImages = document.querySelectorAll(".lazy");
+//     var imageObserver = new IntersectionObserver(function (entries, observer) {
+//       entries.forEach(function (entry) {
+//         if (entry.isIntersecting) {
+//           var image = entry.target;
+//           image.src = image.dataset.src;
+//           image.classList.remove("lazy");
+//           imageObserver.unobserve(image);
+//         }
+//       });
+//     });
 
-    lazyloadImages.forEach(function (image) {
-      imageObserver.observe(image);
-    });
-  } else {
-    var lazyloadThrottleTimeout;
-    lazyloadImages = document.querySelectorAll(".lazy");
+//     lazyloadImages.forEach(function (image) {
+//       imageObserver.observe(image);
+//     });
+//   } else {
+//     var lazyloadThrottleTimeout;
+//     lazyloadImages = document.querySelectorAll(".lazy");
 
-    function lazyload() {
-      if (lazyloadThrottleTimeout) {
-        clearTimeout(lazyloadThrottleTimeout);
-      }
+//     function lazyload() {
+//       if (lazyloadThrottleTimeout) {
+//         clearTimeout(lazyloadThrottleTimeout);
+//       }
 
-      lazyloadThrottleTimeout = setTimeout(function () {
-        var scrollTop = window.pageYOffset;
-        lazyloadImages.forEach(function (img) {
-          if (img.offsetTop < (window.innerHeight + scrollTop)) {
-            img.src = img.dataset.src;
-            img.classList.remove('lazy');
-          }
-        });
-        if (lazyloadImages.length == 0) {
-          document.removeEventListener("scroll", lazyload);
-          window.removeEventListener("resize", lazyload);
-          window.removeEventListener("orientationChange", lazyload);
-        }
-      }, 20);
-    }
+//       lazyloadThrottleTimeout = setTimeout(function () {
+//         var scrollTop = window.pageYOffset;
+//         lazyloadImages.forEach(function (img) {
+//           if (img.offsetTop < (window.innerHeight + scrollTop)) {
+//             img.src = img.dataset.src;
+//             img.classList.remove('lazy');
+//           }
+//         });
+//         if (lazyloadImages.length == 0) {
+//           document.removeEventListener("scroll", lazyload);
+//           window.removeEventListener("resize", lazyload);
+//           window.removeEventListener("orientationChange", lazyload);
+//         }
+//       }, 20);
+//     }
 
-    document.addEventListener("scroll", lazyload);
-    window.addEventListener("resize", lazyload);
-    window.addEventListener("orientationChange", lazyload);
-  }
-})
+//     document.addEventListener("scroll", lazyload);
+//     window.addEventListener("resize", lazyload);
+//     window.addEventListener("orientationChange", lazyload);
+//   }
+// })
 
 
 
@@ -219,3 +219,75 @@ document.addEventListener("DOMContentLoaded", function () {
 // imgs.forEach(img => {
 //   observer.observe(img);
 // });
+
+
+//COMPANERO
+// let imagesToLoad = document.querySelectorAll("img[data-src]");
+// const loadImages = (image) => {
+//   image.setAttribute("src", image.getAttribute("data-src"));
+//   image.onload = () => {
+//     image.removeAttribute("data-src");
+//   };
+// };
+
+// if ("IntersectionObserver" in window) {
+//   const observer = new IntersectionObserver((items, observer) => {
+//     items.forEach((item) => {
+//       if (item.isIntersecting) {
+//         loadImages(item.target);
+//         observer.unobserve(item.target);
+//       }
+//     });
+//   }, imgOptions);
+
+//   imagesToLoad.forEach((img) => {
+//     observer.observe(img);
+//   });
+// } else {
+//   imagesToLoad.forEach((img) => {
+//     loadImages(img);
+//   });
+// }
+
+
+
+// TEACHER SOLUTION
+//get all imgs with data-src attribute
+let imagesToLoad = document.querySelectorAll("img[data-src]");
+
+// console.log(imagesToLoad);
+
+const imgOptions = {
+  rootMargin: '0px 0px 50px 0px',
+  threshold: 1
+};
+
+const loadImages = (image) => {
+  image.setAttribute("src", image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute("data-src");
+  };
+};
+
+//Obsert the page and see what content is loaded
+//First check to see if Intersection Observer is supported
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+      
+      if (item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
+      }
+    });
+  }, imgOptions);
+
+  //loop through each img and check status and load if necessary
+  imagesToLoad.forEach((img) => {
+    observer.observe(img);
+  });
+} else { // just load ALL images if not supported
+  imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
+}
