@@ -23,7 +23,6 @@
 
     #date2 {
         font-size: 1.3rem;
-
     }
 
     #hamburgerBtn {
@@ -113,5 +112,17 @@
     .grid-nested:last-child {
         display: block;
         visibility: visible;
+    }
+
+
+    /* ************** */
+    /* DISCOVERY PAGE */
+    /* ************** */
+    
+    .grid-col-span-discover, .grid-col-span-discover p {
+
+        grid-column-start: 2;
+        grid-column-end: 4;
+        text-align: center;
     }
 }

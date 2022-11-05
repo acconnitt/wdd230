@@ -22,9 +22,10 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
         width: 3rem;
     }
 
-    #date2{
+    #date2 {
         font-size: 1rem;
     }
+
     .logo {
         display: block;
         width: 120px;
@@ -109,10 +110,24 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     }
 
     /* Force an element not to collapse */
-    .clearfix:after{
-        content:"";
-        display:table;
-        clear:both;
-
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
     }
+
+
+
+
+    /* ************** */
+    /* DISCOVERY PAGE */
+    /* ************** */
+    
+    .grid-col-span-discover, .grid-col-span-discover p {
+
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+
 }
