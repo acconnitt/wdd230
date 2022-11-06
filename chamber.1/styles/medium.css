@@ -104,6 +104,9 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     .logo-footer {
         min-width: 8rem;
         max-width: 10rem;
+
+        width: 150px;
+        height: 150px;
     }
 
     #author::after {
@@ -123,8 +126,9 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     /* ************** */
     /* DISCOVERY PAGE */
     /* ************** */
-    
-    .grid-col-span-discover, .grid-col-span-discover p {
+
+    .grid-col-span-discover,
+    .grid-col-span-discover p {
         grid-column-start: 2;
         grid-column-end: 3;
     }
