@@ -88,7 +88,7 @@ weeklyBanner();
 //get all imgs with data-src attribute
 let imagesToLoad = document.querySelectorAll("img[data-src]");
 
-// console.log(imagesToLoad);
+console.log(imagesToLoad);
 
 const imgOptions = {
   rootMargin: '0px 0px 50px 0px',
@@ -124,3 +124,7 @@ if ("IntersectionObserver" in window) {
     loadImages(img);
   });
 }
+
+
+
+

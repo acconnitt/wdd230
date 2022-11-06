@@ -90,7 +90,7 @@ main {
 .logo {
     /* Align logo to center */
     width: 100px;
-    height: auto;
+    height: 100px;
     display: block;
     padding: 10px 20px;
 }
@@ -112,6 +112,7 @@ h1 {
 .instagram-icon {
     float: left;
     width: 2.5rem;
+    height: 2.5rem;
 }
 
 #date2 {
@@ -318,11 +319,24 @@ The Join section*/
     margin: auto;
     display: block;
     /* border: 2px solid purple; */
+
+    border-radius: 75%;
 }
 
 .grid-col-span-discover p {
     text-align: justify;
     padding: .5rem;
     margin: 0 0 2rem 0;
+}
+
+.lazy img {
+    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+    filter: blur(4px);
+    
+}
+
+img:hover {
+    webkit-filter: none; /* Chrome, Safari, Opera */
+    filter: none;
 }
 
