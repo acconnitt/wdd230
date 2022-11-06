@@ -299,11 +299,12 @@ The Join section*/
 /* DISCOVERY PAGE */
 /* ************** */
 
-.grid-col-span h2 {
+.grid-col-span-discover h2 {
     /* position: absolute; */
     /* font-size: 16px; */
     text-align: center;
-    color:brown;
+    color:orange;
+    font-size: var(--fs-600);
     /* top: 4px;
     left: 95px; */
     margin: 1rem;
@@ -322,7 +323,7 @@ The Join section*/
     display: block;
     /* border: 2px solid purple; */
 
-    border-radius: 75%;
+    border-radius: 10%;
 }
 
 .grid-col-span-discover p {
@@ -333,7 +334,7 @@ The Join section*/
 
 .lazy{
     webkit-filter: blur(4px); /* Chrome, Safari, Opera */
-    filter: blur(3px);
+    filter: blur(5px);
     
 }
 
