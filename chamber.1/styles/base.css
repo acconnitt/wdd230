@@ -89,10 +89,10 @@ main {
 
 .logo {
     /* Align logo to center */
-    width: 100px;
-    height: auto;
+    width: 85px;
+    height: 85px;
     display: block;
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 h1 {
