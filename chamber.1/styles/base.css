@@ -331,9 +331,9 @@ The Join section*/
     margin: 0 0 2rem 0;
 }
 
-.lazy img {
+.lazy{
     webkit-filter: blur(4px); /* Chrome, Safari, Opera */
-    filter: blur(4px);
+    filter: blur(3px);
     
 }
 
