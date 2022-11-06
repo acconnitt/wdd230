@@ -303,7 +303,10 @@ The Join section*/
     /* position: absolute; */
     /* font-size: 16px; */
     text-align: center;
+    font-family: var(--titles);
     color:orange;
+    /* text-shadow: 2px 4px 4px rgba(30, 29, 29, 0.2); */
+    text-shadow: 10px 10px 15px rgb(167, 162, 162);
     font-size: var(--fs-600);
     /* top: 4px;
     left: 95px; */
@@ -342,4 +345,5 @@ img:hover {
     webkit-filter: none; /* Chrome, Safari, Opera */
     filter: none;
 }
+
 
