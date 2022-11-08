@@ -304,7 +304,7 @@ The Join section*/
     /* font-size: 16px; */
     text-align: center;
     font-family: var(--titles);
-    color:orange;
+    color: orange;
     /* text-shadow: 2px 4px 4px rgba(30, 29, 29, 0.2); */
     text-shadow: 10px 10px 15px rgb(167, 162, 162);
     font-size: var(--fs-600);
@@ -313,15 +313,20 @@ The Join section*/
     margin: 1rem;
 }
 
+span {
+    display: block;
+    text-align: center;
+  }
+
 .lazy {
     margin: 1rem;
-    
+
     /* serve as placeholder while loading real image */
     display: block;
     background: #3a3a90;
     width: 300px;
     height: 400px;
-    
+
     margin: auto;
     display: block;
     /* border: 2px solid purple; */
@@ -335,15 +340,15 @@ The Join section*/
     margin: 0 0 2rem 0;
 }
 
-.lazy{
-    webkit-filter: blur(4px); /* Chrome, Safari, Opera */
+.lazy {
+    webkit-filter: blur(4px);
+    /* Chrome, Safari, Opera */
     filter: blur(5px);
-    
+
 }
 
 img:hover {
-    webkit-filter: none; /* Chrome, Safari, Opera */
+    webkit-filter: none;
+    /* Chrome, Safari, Opera */
     filter: none;
 }
-
-

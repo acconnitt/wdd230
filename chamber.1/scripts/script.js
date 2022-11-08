@@ -1,10 +1,10 @@
 // OPEN AND CLOSE MENU 
-function toggleMenu(){
-    document.getElementById("primaryNav").classList.toggle("open");
-    document.getElementById("hamburgerBtn").classList.toggle("open");
+function toggleMenu() {
+  document.getElementById("primaryNav").classList.toggle("open");
+  document.getElementById("hamburgerBtn").classList.toggle("open");
 }
 
-const x=document.getElementById('hamburgerBtn');
+const x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
 
 
@@ -14,25 +14,23 @@ x.onclick = toggleMenu;
 
 // DATE FOR FOOTER
 // Select the HTML element to manipulate
-const year1 = document.querySelector("#year1")
+const year1 = document.querySelector("#year1");
 const date1 = document.querySelector("#date1");
 // Try to complete the method with options
 try {
-    const options = {
-        day: "numeric",
-        month: "numeric",
-        year: "numeric",
-        hour: "numeric",
-        minute: "numeric",
-        second: "numeric"
-    };
+  const options = {
+    day: "numeric",
+    month: "numeric",
+    year: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric"
+  };
 
-    year1.innerHTML = `Today is <span class="highlight">${new Date().toLocaleDateString("en-GB", options.year)}</span>`;
-    date1.innerHTML = `Last Modification: <span class="highlight">${new Date().toLocaleDateString("en-GB", options)}</span>`;
-} 
-
-catch (e) {
-    alert("Error with code or your browser does not support Locale");
+  year1.innerHTML = `Today is <span class="highlight">${new Date().toLocaleDateString("en-GB", options.year)}</span>`;
+  date1.innerHTML = `Last Modification: <span class="highlight">${new Date().toLocaleDateString("en-GB", options)}</span>`;
+} catch (e) {
+  alert("Error with code or your browser does not support Locale");
 }
 
 
@@ -44,18 +42,16 @@ catch (e) {
 const date2 = document.querySelector("#date2");
 try {
 
-    const options = {
-        weekday: "long",
-        day: "numeric",
-        month: "long",
-        year: "numeric"
-    };
+  const options = {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  };
 
-    date2.innerHTML = `<span class="highlight">${new Date().toLocaleDateString("en-GB", options)}</span>`;
-}
-
-catch (e) {
-    alert("Error with code or your browser does not support Locale");
+  date2.innerHTML = `<span class="highlight">${new Date().toLocaleDateString("en-GB", options)}</span>`;
+} catch (e) {
+  alert("Error with code or your browser does not support Locale");
 }
 
 
@@ -70,16 +66,17 @@ var dayOfWeek = currentDate.getDay();
 // DISPLAY BANNER
 function weeklyBanner() {
 
-    if (dayOfWeek === 1 || dayOfWeek === 2){
-        // Calling banner id  #banner 
-        banner.style.display = "block";        
-    }
-    else{
-        banner.style.display = "none";
-    }
+  if (dayOfWeek === 1 || dayOfWeek === 2) {
+    // Calling banner id  #banner 
+    banner.style.display = "block";
+  } else {
+    banner.style.display = "none";
+  }
 }
 
 weeklyBanner();
+
+
 
 
 
@@ -107,7 +104,7 @@ const loadImages = (image) => {
 if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver((items, observer) => {
     items.forEach((item) => {
-      
+
       if (item.isIntersecting) {
         loadImages(item.target);
         observer.unobserve(item.target);
@@ -127,60 +124,82 @@ if ("IntersectionObserver" in window) {
 
 
 
+
+
+
+
+//NUMBER OF VISITS
 //DAYS SINCE LAST VISIT
-const daysSinceLastVisit = document.querySelector(".nowvisit");
-const visitsDisplay = document.querySelector(".visits");
 
-let daysPassed = 0;
-let lastVisited;
-let visitedToday = new Date();
+const visit_display = document.querySelector("#num_visits");
+const days_since_last_visit = document.querySelector("#last_visit_day");
 
-// get the stored value in localStorage
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
-// determine if this is the first visit or display the number of visits.
-if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
+
+// variables to store new data 
+let today_date = new Date(); //current date
+let last_date_visited; //starts empty
+let days_passed = 0; //starts on 0
+
+
+// get num_visit from the localStorage
+let num_visits = Number(window.localStorage.getItem("list"));
+
+
+// if num_visit is not 0 
+if (num_visits !== 0) {
+  //display number of visits
+  visit_display.textContent = num_visits;
+  // if this is first visit
 } else {
-	visitsDisplay.textContent = `This is your first visit!`;
-}
-// increment the number of visits.
-numVisits++;
-// store the new number of visits value
-localStorage.setItem("visits-ls", numVisits);
-
-// add values to storage
-const addToStorage = () => {
-    localStorage.setItem("lastVisited", visitedToday.getTime());
-    localStorage.setItem("visitedToday", visitedToday.getTime());
-};
-
-
-const setNewDate = () => {
-    localStorage.setItem("visitedToday", visitedToday.getTime());
-    daysPassed = calculateDays();
-};
-
-const calculateDays = () => {
-    let last = localStorage.getItem("lastVisited");
-    let now = localStorage.getItem("visitedToday");
-
-    let difference = now - last;
-
-    daysPassed = difference / (1000 * 3600 * 24);
-    daysPassed = Math.round(daysPassed);
-    return daysPassed;
-};
-
-if (!localStorage.getItem("lastVisited")) {
-    addToStorage();
-    daysPassed = calculateDays();
-} else {
-    setNewDate();
+  // display message
+  visit_display.textContent = `Welcome! This is your first time visiting!`;
 }
 
-daysSinceLastVisit.innerHTML = daysPassed;
 
-localStorage.setItem("lastVisited", visitedToday.getTime());
+// increment num_visits by 1 after displaying it
+num_visits++;
+// store new num_visits value
+localStorage.setItem("list", num_visits);
 
+// not sure what is the purpose
+const add_to_storage = () => {
+  localStorage.setItem("last_date_visited", today_date.getTime());
+  localStorage.setItem("today_date", today_date.getTime());
+};
 
+// set new date to today_date
+const set_new_date = () => {
+  localStorage.setItem("today_date", today_date.getTime());
+  // call calculate_days function 
+  days_passed = calculate_days();
+};
 
+// calculating how many days have passed 
+const calculate_days = () => {
+
+  // assign values to new variable for computation 
+  let now = localStorage.getItem("today_date");
+  let last = localStorage.getItem("last_date_visited");
+
+  // subtatracting todays date and last date visited
+  let difference = now - last;
+
+  days_passed = difference / (1000 * 3600 * 24);
+  // round the number to the nearest ten 
+  days_passed = Math.round(days_passed);
+  //return results
+  return days_passed;
+};
+
+// if last_get_visited has not value
+if (!localStorage.getItem("last_date_visited")) {
+  //add data
+  add_to_storage();
+  days_passed = calculate_days();
+} else { // set a new date
+  set_new_date();
+}
+
+days_since_last_visit.innerHTML = days_passed;
+
+localStorage.setItem("last_date_visited", today_date.getTime());
