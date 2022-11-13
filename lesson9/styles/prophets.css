@@ -29,6 +29,7 @@ h1 {
 .cards img {
     margin: 20px ;
     max-width: 85%;
+    height: auto;
     border-radius: 50%;
 }
 
