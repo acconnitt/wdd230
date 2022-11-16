@@ -1,0 +1,24 @@
+
+.cards {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    flex-wrap: wrap;
+    /* margin: 1rem; */
+
+}
+
+.cards img {
+    margin-top: 100px;
+    /* margin top: 200px ; */
+    /* max-width: 85%; */
+    /* height: auto; */
+    /* border-radius: 50%; */
+}
+
+.cards section {
+    background-color: rgba(131, 200, 212, 0.833);
+    margin: 15px;
+    /* padding: 10px; */
+    border-radius: 1rem;
+}

@@ -1,0 +1,85 @@
+{
+    "companies": [
+      {
+        "name": "Go Figure",
+        "address": "732 Prosacco Mews",
+        "phoneNumber": "202-555-0162",
+        "websiteURL": "",
+        "image": "images/goFigure.png",
+        "membershipLevel": "Gold",
+        "email": "umante@connelly.biz"
+      },
+      {
+        "name": "The Sleek Apple",
+        "address": "65211 Corkery Crest",
+        "phoneNumber": "202-555-0101",
+        "websiteURL": "",
+        "image": "images/the-sleek-apple.png",
+        "membershipLevel": "Bronze",
+        "email": "erika13@dickens.org"
+      },
+      {
+        "name": "The Bitter Dish",
+        "address": "15911 Brionna Plaza",
+        "phoneNumber": "555-867-5309",
+        "websiteURL": "",
+        "image": "images/theBitterDish.png",
+        "membershipLevel": "Bronze",
+        "email": "louvenia.hirthe@casper.biz"
+      },
+      {
+        "name": "Hipster Graphics",
+        "address": "650 Berta Forest",
+        "phoneNumber": "202-555-0185",
+        "websiteURL": "",
+        "image": "images/hipsterGraphics.png",
+        "membershipLevel": "N/A",
+        "email": "erna.purdy@streich.org"
+      },
+      {
+        "name": "The Empty Plate",
+        "address": "8813 O'Connell Rue",
+        "phoneNumber": "202-555-0142",
+        "websiteURL": "",
+        "image": "images/theEmptyPlate.png",
+        "membershipLevel": "N/A",
+        "email": "sharvey@christiansen.biz"
+      },
+      {
+        "name": "Old Granola Trading",
+        "address": "879 Hudson Loop",
+        "phoneNumber": "202-555-0194",
+        "websiteURL": "",
+        "image": "images/oldGranolaTrading.png",
+        "membershipLevel": "Gold",
+        "email": "koch.fatima@oconner.info"
+      },
+      {
+        "name": "Purely Unoriginal",
+        "address": "218 Streich Manor",
+        "phoneNumber": "202-555-0114",
+        "websiteURL": "",
+        "image": "images/purelyUnoriginal.png",
+        "membershipLevel": "Gold",
+        "email": "omorissette@casper.biz"
+      },
+      {
+        "name": "The British Frodo",
+        "address": "450 Silas Cove",
+        "phoneNumber": "+1-202-555-0162",
+        "websiteURL": "",
+        "image": "images/theBritishFrodo.png",
+        "membershipLevel": "Silver",
+        "email": "jsipes@rice.net"
+      },
+      {
+        "name": "The Whispering Tome",
+        "address": "39645 Skiles Keys",
+        "phoneNumber": "555-789-123",
+        "websiteURL": "",
+        "image": "images/theWhisperingTome.png",
+        "membershipLevel": "Bronze",
+        "email": "dexter80@balistreri.net"
+      }
+    ]
+  }
