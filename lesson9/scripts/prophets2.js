@@ -1,18 +1,13 @@
-const requestURL = './data.json';
-
-// fetch('https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json')
-// .then((response) => response.json())
-// .then((json) => console.log(json));
-
-
-// const requestURL = $.getJSON('./data');
-// $.getJSON('./data.json', function(data));
-// const requestURL = requests.get('./data.json');
-// import requestURL from './data.json';
-// const requestURL = JSON.parse('./data.json')
-// const requestURL = 'data.json';
-
+const requestURL = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json';
 const cards = document.querySelector('.cards');
+
+// fetch(requestURL)
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (jsonObject) {
+//     console.table(jsonObject);  // temporary checking for valid response and data parsing
+//   });
 
 
 // More robust way 
@@ -22,11 +17,8 @@ async function getProphets() {
     const jsonObject = await response.json();
     const prophets = jsonObject['prophets'];
     // console.log(prophets);
-    console.table(jsonObject);
     prophets.forEach(displayProphets);
 }
-
-
 
 function displayProphets(prophet) {
 
@@ -72,3 +64,15 @@ function displayProphets(prophet) {
 }
 
 getProphets();
+
+
+// LAZY LOADING
+// if ("loading" in HTMLImageElement.prototype) {
+//     const lazyImages = document.querySelectorAll("img");
+//     lazyImages.forEach(img => {
+//       img.src = img.dataset.src;
+//     });
+//   }
+//   else {
+//     // Use our own lazyLoading with Intersection Observers and all that jazz
+//   }
