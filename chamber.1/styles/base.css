@@ -233,6 +233,10 @@ section {
     object-fit: cover;
     object-position: right;
 }
+#weather-icon {
+    width:50%;
+    height:50%;
+}
 
 .grid-col-span:nth-child(3) {
     background-image: radial-gradient(#0f2e41 ,#3E7767, #93C674);
