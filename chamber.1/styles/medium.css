@@ -42,6 +42,10 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
         grid-template-columns: repeat(3, 1fr);
     }
 
+    section {
+        font-size: 1.5rem;
+    }
+
     /* Helps section to expand 3 columns */
     .grid-col-span {
         grid-column: span 3;
