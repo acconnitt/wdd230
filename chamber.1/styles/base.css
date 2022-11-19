@@ -224,16 +224,24 @@ section {
     min-height: 10rem;
     height: auto;
     border: 2px solid rgb(255, 106, 0);
+    font-size: 1.5rem;
 }
 
 .img1 {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: right;
 }
 
-.grid-col-span:first-child {
-    padding: 0;
+.grid-col-span:nth-child(3) {
+    background-image: radial-gradient(#0f2e41 ,#3E7767, #93C674);
+    color: aliceblue;
+}
+.grid-col-span:nth-child(3) {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 4rem;
 }
 
 /* Hiding last spotlight 
@@ -313,8 +321,12 @@ The Join section*/
     margin: 1rem;
 }
 
+h2 {
+    text-align:center;
+}
+
 span {
-    display: block;
+    /* display: block; */
     text-align: center;
   }
 
