@@ -223,7 +223,7 @@ section {
     width: 100%;
     min-height: 10rem;
     height: auto;
-    border: 2px solid rgb(255, 106, 0);
+    /* border: 2px solid rgb(255, 106, 0); */
     font-size: 1.2rem;
 }
 
@@ -242,10 +242,15 @@ section {
     background-image: radial-gradient(#0f2e41 ,#3E7767, #93C674);
     color: aliceblue;
 }
+
 .grid-col-span:nth-child(3) {
     text-align: center;
     font-size: 1.5rem;
     padding: 4rem;
+}
+
+.grid-col-span:nth-child(4) p {
+    text-align: center;
 }
 
 /* Hiding last spotlight 
