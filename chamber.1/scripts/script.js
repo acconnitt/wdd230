@@ -128,78 +128,78 @@ if ("IntersectionObserver" in window) {
 
 
 
-// //NUMBER OF VISITS
-// //DAYS SINCE LAST VISIT
+//NUMBER OF VISITS
+//DAYS SINCE LAST VISIT
 
-// const visit_display = document.querySelector("#num_visits");
-// const days_since_last_visit = document.querySelector("#days_since_last_visit");
-
-
-// // variables to store new data 
-// let today_date = new Date(); //current date
-// let last_date_visited; //starts empty
-// let days_passed = 0; //starts on 0
+const visit_display = document.querySelector("#num_visits");
+const days_since_last_visit = document.querySelector("#days_since_last_visit");
 
 
-// // get num_visit from the localStorage
-// let num_visits = Number(window.localStorage.getItem("list"));
+// variables to store new data 
+let today_date = new Date(); //current date
+let last_date_visited; //starts empty
+let days_passed = 0; //starts on 0
 
 
-// // if num_visit is not 0 
-// if (num_visits !== 0) {
-//   //display number of visits
-//   visit_display.textContent = num_visits;
-//   // if this is first visit
-// } else {
-//   // display message
-//   visit_display.textContent = `Welcome! This is your first time visiting!`;
-// }
+// get num_visit from the localStorage
+let num_visits = Number(window.localStorage.getItem("list"));
 
 
-// // increment num_visits by 1 after displaying it
-// num_visits++;
-// // store new num_visits value
-// localStorage.setItem("list", num_visits);
+// if num_visit is not 0 
+if (num_visits !== 0) {
+  //display number of visits
+  visit_display.textContent = num_visits;
+  // if this is first visit
+} else {
+  // display message
+  visit_display.textContent = `Welcome! This is your first time visiting!`;
+}
 
-// // not sure what is the purpose
-// const add_to_storage = () => {
-//   localStorage.setItem("last_date_visited", today_date.getTime());
-//   localStorage.setItem("today_date", today_date.getTime());
-// };
 
-// // set new date to today_date
-// const set_new_date = () => {
-//   localStorage.setItem("today_date", today_date.getTime());
-//   // call calculate_days function 
-//   days_passed = calculate_days();
-// };
+// increment num_visits by 1 after displaying it
+num_visits++;
+// store new num_visits value
+localStorage.setItem("list", num_visits);
 
-// // calculating how many days have passed 
-// const calculate_days = () => {
+// not sure what is the purpose
+const add_to_storage = () => {
+  localStorage.setItem("last_date_visited", today_date.getTime());
+  localStorage.setItem("today_date", today_date.getTime());
+};
 
-//   // assign values to new variable for computation 
-//   let now = localStorage.getItem("today_date");
-//   let last = localStorage.getItem("last_date_visited");
+// set new date to today_date
+const set_new_date = () => {
+  localStorage.setItem("today_date", today_date.getTime());
+  // call calculate_days function 
+  days_passed = calculate_days();
+};
 
-//   // subtatracting todays date and last date visited
-//   let difference = now - last;
+// calculating how many days have passed 
+const calculate_days = () => {
 
-//   days_passed = difference / (1000 * 3600 * 24);
-//   // round the number to the nearest ten 
-//   days_passed = Math.round(days_passed);
-//   //return results
-//   return days_passed;
-// };
+  // assign values to new variable for computation 
+  let now = localStorage.getItem("today_date");
+  let last = localStorage.getItem("last_date_visited");
 
-// // if last_get_visited has not value
-// if (!localStorage.getItem("last_date_visited")) {
-//   //add data
-//   add_to_storage();
-//   days_passed = calculate_days();
-// } else { // set a new date
-//   set_new_date();
-// }
+  // subtatracting todays date and last date visited
+  let difference = now - last;
 
-// days_since_last_visit.innerHTML = days_passed;
+  days_passed = difference / (1000 * 3600 * 24);
+  // round the number to the nearest ten 
+  days_passed = Math.round(days_passed);
+  //return results
+  return days_passed;
+};
 
-// localStorage.setItem("last_date_visited", today_date.getTime());
+// if last_get_visited has not value
+if (!localStorage.getItem("last_date_visited")) {
+  //add data
+  add_to_storage();
+  days_passed = calculate_days();
+} else { // set a new date
+  set_new_date();
+}
+
+days_since_last_visit.innerHTML = days_passed;
+
+localStorage.setItem("last_date_visited", today_date.getTime());

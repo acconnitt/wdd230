@@ -12,7 +12,7 @@ let num_visits = Number(window.localStorage.getItem("list"));
 if (num_visits !== 0) {
     //display number of visits
     visit_display.textContent = num_visits;
-    // if this is first visit
+// if this is first visit
 } else {
     // display message
     visit_display.textContent = `Welcome! This is your first time visiting!`;
