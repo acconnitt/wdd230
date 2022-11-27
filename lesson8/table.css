@@ -1,9 +1,9 @@
 caption {
-    padding: 1rem;
     caption-side: bottom;
     font-weight: bold;
     font-style: oblique;
     text-decoration-line: underline;
+    padding: 1rem;
 }
 
 div {
