@@ -4,9 +4,9 @@ caption {
     font-weight: bold;
     font-style: oblique;
     text-decoration-line: underline;
-  }
+}
 
-div{
+div {
     background-color: blanchedalmond;
 }
 
@@ -23,19 +23,18 @@ table {
 }
 
 thead tr:nth-child(2) {
-    background-color:red;
+    background-color: red;
     color: aliceblue;
 }
 
-tbody tr:nth-child(even){
+tbody tr:nth-child(even) {
     background-color: tomato;
     color: white;
 }
 
-#highlight{
+#highlight {
     background-color: rgb(48, 48, 244);
     color: white;
-
 }
 
 th,
@@ -44,13 +43,13 @@ td {
     padding: 1rem 2rem;
 }
 
-div{
+div {
     display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-h1{
+h1 {
     text-align: center;
 }
