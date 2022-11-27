@@ -1,4 +1,4 @@
-/* caption {
+caption {
     display: table-caption;
     text-align: center;
     caption-side: bottom;
@@ -6,12 +6,6 @@
     font-style: oblique;
     text-decoration-line: underline;
     padding: 1rem;
-} */
-
-caption {
-    display: table-caption;
-    text-align: center;
-    caption-side: bottom;
 }
 
 div {
