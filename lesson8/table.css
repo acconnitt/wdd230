@@ -1,4 +1,6 @@
 caption {
+    display: table-caption;
+    text-align: center;
     caption-side: bottom;
     font-weight: bold;
     font-style: oblique;
