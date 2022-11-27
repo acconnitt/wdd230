@@ -29,7 +29,6 @@ thead tr:nth-child(2) {
 
 tbody tr:nth-child(even) {
     background-color: tomato;
-    color: white;
 }
 
 #highlight {
