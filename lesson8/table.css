@@ -1,0 +1,56 @@
+caption {
+    padding: 1rem;
+    caption-side: bottom;
+    font-weight: bold;
+    font-style: oblique;
+    text-decoration-line: underline;
+  }
+
+div{
+    background-color: blanchedalmond;
+}
+
+table {
+    background-color: aquamarine;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#one {
+    font-size: 2rem;
+    color: aliceblue;
+    background-color: rgb(48, 48, 244);
+}
+
+thead tr:nth-child(2) {
+    background-color:red;
+    color: aliceblue;
+}
+
+tbody tr:nth-child(even){
+    background-color: tomato;
+    color: white;
+}
+
+#highlight{
+    background-color: rgb(48, 48, 244);
+    color: white;
+
+}
+
+th,
+td {
+    border: solid 2px purple;
+    padding: 1rem 2rem;
+}
+
+div{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1{
+    text-align: center;
+}
