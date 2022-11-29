@@ -54,10 +54,6 @@ try {
   alert("Error with code or your browser does not support Locale");
 }
 
-
-
-
-
 // Display banner on page only on 
 // Monday and Tuesdays 
 var currentDate = new Date();

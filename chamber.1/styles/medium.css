@@ -131,11 +131,17 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     /* DISCOVERY PAGE */
     /* ************** */
 
-    .grid-col-span-discover,
-    .grid-col-span-discover p {
-        grid-column-start: 2;
-        grid-column-end: 3;
+    .grid-col-span-discover, 
+    .grid-col-span-discover p,
+    .main-thankyou {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
     }
 
-
+    form {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: left;
+    }
 }

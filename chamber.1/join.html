@@ -85,6 +85,74 @@
     </header>
 
     <main class="content">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>APPLICANT INFORMATION</legend>
+                <label class="top">
+                    First Name*<input type="text" name="fname" placeholder="Enter Name" required>
+                </label>
+                <label class="top">
+                    Last Name*<input type="text" name="lname" placeholder="Enter Last Name" required>
+                </label>
+                <label class="top">
+                    Position/Title<input type="text" name="position-title" pattern="[A-Za-z\-]{7,}"
+                        placeholder="Position Title">
+                </label>
+                <label class="top">
+                    Email*<input type="email" name="email" placeholder="user@email.com" required>
+                </label>
+                <label class="top">
+                    Cell Phone<input type="tel" name="phone" placeholder="555 555 5555" required>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend> BUSINESS DESCRIPTION </legend>
+
+                <label class="top">
+                    Business Name<input type="text" name="business-name" placeholder="Business Name" required>
+                </label>
+                <label class="top">
+                    Business Description<textarea name="business-description"
+                        placeholder="Business Description"></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>MEMBERSHIP LEVEL</legend>
+                <div>Membership</div>
+
+                <label class="sbs">
+                    <input type="radio" name="membership" value="np"> NON PROFIT
+                </label>
+                <label class="sbs">
+                    <input type="radio" name="membership" value="bronze"> BRONZE
+                </label>
+                <label class="sbs">
+                    <input type="radio" name="membership" value="silver"> SILVER
+                </label>
+                <label class="sbs">
+                    <input type="radio" name="membership" value="gold"> GOLD
+                </label>
+
+                <div>Donations</div>
+                <label class="top">
+                    <select name="subject">
+                        <option value=""> Please Choose </option>
+                        <option value="business"> $100 </option>
+                        <option value="construction"> $200 </option>
+                        <option value="security"> $500 </option>
+                        <option value="data"> $1,000 </option>
+                        <option value="info"> $5,000 </option>
+                        <option value="manufacturing"> 10,000 </option>
+                    </select>
+                </label>
+            </fieldset>
+
+
+            <input type="submit" value="SEND" class="submitBtn">
+
+        </form>
 
     </main>
 

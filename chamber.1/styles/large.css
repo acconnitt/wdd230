@@ -118,10 +118,24 @@
     /* ************** */
     /* DISCOVERY PAGE */
     /* ************** */
-    
-    .grid-col-span-discover, .grid-col-span-discover p {
+
+    .grid-col-span-discover,
+    .grid-col-span-discover p,
+    .main-thankyou {
         grid-column-start: 2;
         grid-column-end: 4;
         text-align: center;
+    }
+
+    form {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: left;
+    }
+
+    .membership {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start:1;
     }
 }
