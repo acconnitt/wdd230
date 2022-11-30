@@ -468,7 +468,7 @@ main .grid img {
     max-width: 100%;
     margin: 1rem;
     background-color: rgb(16, 137, 103);
-    border-radius:30%;
+    border-radius: 30%;
 }
 
 .content button {
@@ -478,7 +478,9 @@ main .grid img {
     color: white;
     border-radius: 10px;
 }
-main .grid, .list {
+
+main .grid,
+.list {
     text-align: center;
 }
 
@@ -507,15 +509,15 @@ section {
 }
 
 .list {
-    display:flex;
-    flex-direction:column;
-    text-align:center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
 }
 
 .list section {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     grid-template-columns: 2fr 1fr 1fr;
     margin: 2rem 0;
     padding: 0.25rem;
@@ -523,7 +525,8 @@ section {
 }
 
 .list section img {
-    display: none; /* smaller viewports only */
+    display: none;
+    /* smaller viewports only */
 }
 
 .list section h3 {
@@ -535,16 +538,65 @@ section {
     background-color: rgb(185, 244, 224);
 }
 
-iframe{
+iframe {
     width: 100%;
 }
 
-.contact-us{
+.contact-us {
     background-color: gray;
 }
 
-.one form{
+.wrapper {
     display: flex;
-    flex-direction:column;
-    margin: 0 1rem 1rem 1rem,;
+    flex-direction: column;
+    margin: 0 1rem 1rem 1rem, ;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2 {
+    /* margin: 2rem 1rem; */
+    padding: 4rem;
+    font-size: 2rem;
+}
+
+.wrapper {
+    width: 100%;
+    color: #9c2c13;
+    background-color: rgb(209, 209, 51);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: .3rem;
+    gap: 30px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.wrapper .box,
+input {
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    font-size: 2rem;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    align-content: center;
+    font-style: bold;
+}
+
+.wrapper .box input {
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+
+.wrapper .box textarea {
+    height: 200px;
+    overflow: auto;
+}
+
+
+main .container {
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
