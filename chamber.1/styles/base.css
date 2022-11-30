@@ -532,5 +532,19 @@ section {
 }
 
 .list section:nth-child(even) {
-    background-color: #bed;
+    background-color: rgb(185, 244, 224);
+}
+
+iframe{
+    width: 100%;
+}
+
+.contact-us{
+    background-color: gray;
+}
+
+.one form{
+    display: flex;
+    flex-direction:column;
+    margin: 0 1rem 1rem 1rem,;
 }

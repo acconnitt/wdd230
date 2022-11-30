@@ -147,4 +147,11 @@
         grid-column-start: 2;
         grid-column-end: 4;
     }
+
+    iframe{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    
 }

@@ -113,9 +113,7 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
         height: 150px;
     }
 
-    #author::after {
-        content: "|";
-    }
+    
 
     /* Force an element not to collapse */
     .clearfix:after {
@@ -153,5 +151,10 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     main .grid, .list {
         grid-column-start: 1;
         grid-column-end: 2;
+    }
+
+    iframe{
+        grid-column-start: 1;
+        grid-column-end: 4;
     }
 }
