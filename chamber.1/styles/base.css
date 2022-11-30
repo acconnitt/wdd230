@@ -509,19 +509,17 @@ section {
 .list {
     display:flex;
     flex-direction:column;
+    text-align:center;
+    align-items: center;
 }
 
 .list section {
     display: flex;
     flex-direction:column;
     grid-template-columns: 2fr 1fr 1fr;
-    margin: 2rem;
+    margin: 2rem 0;
     padding: 0.25rem;
-    border: 1px solid 
-}
-
-.list section > * {
-    margin: 0 1rem;
+    border: 1px solid var(--footer);
 }
 
 .list section img {
