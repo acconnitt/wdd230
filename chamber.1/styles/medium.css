@@ -113,7 +113,7 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
         height: 150px;
     }
 
-    
+
 
     /* Force an element not to collapse */
     .clearfix:after {
@@ -129,7 +129,7 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     /* DISCOVERY PAGE */
     /* ************** */
 
-    .grid-col-span-discover, 
+    .grid-col-span-discover,
     .grid-col-span-discover p,
     .main-thankyou {
         grid-column-start: 1;
@@ -148,13 +148,27 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     /* DISCOVERY PAGE */
     /* ************** */
 
-    main .grid, .list {
+    main .grid,
+    .list {
         grid-column-start: 1;
         grid-column-end: 2;
     }
 
-    iframe{
+    iframe {
         grid-column-start: 1;
         grid-column-end: 4;
+    }
+
+    main .container {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    .more-info {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        height: 800px;
+        background-color: var(--footer);
+        color: white;
     }
 }

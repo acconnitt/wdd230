@@ -136,22 +136,32 @@
     .membership {
         grid-column-start: 3;
         grid-column-end: 5;
-        grid-row-start:1;
+        grid-row-start: 1;
     }
 
-     /* ************** */
+    /* ************** */
     /* DISCOVERY PAGE */
     /* ************** */
 
-    main .grid, .list {
+    main .grid,
+    .list {
         grid-column-start: 2;
         grid-column-end: 4;
     }
 
-    iframe{
+    iframe {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    main .container {
         grid-column-start: 1;
         grid-column-end: 5;
     }
 
-    
+    .more-info {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        
+    }
 }
