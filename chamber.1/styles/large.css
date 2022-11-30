@@ -138,4 +138,14 @@
         grid-column-end: 5;
         grid-row-start:1;
     }
+
+     /* ************** */
+    /* DISCOVERY PAGE */
+    /* ************** */
+
+    main .article-content {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        text-align: center;
+    }
 }

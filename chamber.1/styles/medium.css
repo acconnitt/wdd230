@@ -39,7 +39,7 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     }
 
     .content {
-        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: repeat(3, 1fr); */
     }
 
     section {
@@ -143,5 +143,16 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
         grid-column-start: 1;
         grid-column-end: 4;
         text-align: left;
+    }
+
+
+    /* ************** */
+    /* DISCOVERY PAGE */
+    /* ************** */
+
+    main .article-content {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        text-align: center;
     }
 }

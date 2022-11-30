@@ -207,6 +207,8 @@ nav ul li.active a {
 
 .content {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    flex-wrap: wrap;
     gap: 2rem;
 
     padding: 2rem 1em;
@@ -232,13 +234,14 @@ section {
     object-fit: cover;
     object-position: right;
 }
+
 #weather-icon {
-    width:50%;
-    height:50%;
+    width: 50%;
+    height: 50%;
 }
 
 .grid-col-span:nth-child(3) {
-    background-image: radial-gradient(#0f2e41 ,#3E7767, #93C674);
+    background-image: radial-gradient(#0f2e41, #3E7767, #93C674);
     color: aliceblue;
 }
 
@@ -330,13 +333,13 @@ The Join section*/
 }
 
 h2 {
-    text-align:center;
+    text-align: center;
 }
 
 span {
     /* display: block; */
     text-align: center;
-  }
+}
 
 .lazy {
     margin: 1rem;
@@ -376,7 +379,7 @@ img:hover {
 
 
 /*----------- FORM --------------*/
-.main-form{
+.main-form {
     align-items: center;
 }
 
@@ -417,7 +420,8 @@ form label.top textarea {
     background-color: rgba(0, 0, 0, 0, 0.1);
 }
 
-input, select{
+input,
+select {
     width: auto;
     padding: 2rem;
     box-sizing: border-box;
@@ -440,19 +444,66 @@ form input.submitBtn {
     max-width: 20rem;
     font-size: 2rem;
     font-weight: bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 form label.top input:required {
     border-left: rgb(186, 0, 0) solid .5rem
-
 }
 
 form label.top input:required:valid {
     border-left: green solid .5rem;
 }
 
-textarea{
+textarea {
     height: 200px;
     overflow: auto;
 }
+
+
+/*----------- Directory --------------*/
+
+
+
+
+main .article-content img {
+    height: 75px;
+    max-width: 100%;
+    margin: 1rem;
+    background-color: darkslategray;
+    border-radius: 30%;
+}
+
+.content button {
+    padding: 1rem;
+    font-weight: 700;
+    background-color: var(--footer);
+    color: white;
+    border-radius: 10px;
+}
+
+article,
+section {
+    margin: 2rem 0;
+}
+
+
+.article-content section {
+    border: .5rem solid var(--navigation);
+    padding: 0.5rem;
+    background-color: var(--footer);
+    color: aliceblue;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.article-content h2 {
+    text-transform: uppercase;
+}
+
+.article-content p {
+    margin: 10px;
+}
+
+

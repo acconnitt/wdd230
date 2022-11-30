@@ -1,194 +1,100 @@
-// 20221115231756
-// https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json
-
 {
-    "prophets": [
+    "businessCards": [
       {
-        "name": "Joseph",
-        "lastname": "Smith",
-        "birthdate": "23 December 1805",
-        "death": "27 June 1844",
-        "length": 14,
-        "order": 1,
-        "birthplace": "Vermont",
-        "numofchildren": 11,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg"
+        "name": "American Sports Car Design",
+        "phone": "+1(321) 268-1118",
+        "address": "1525 Armstrong Dr, Titusville, FL 32780",
+        "website": "https://americansportscar.com/",
+        "imageurl": "https://americansportscar.com/web/wp-content/uploads/sites/2/2016/10/ASC-logo-new.png",
+        "membership": "2"
       },
       {
-        "name": "Brigham",
-        "lastname": "Young",
-        "birthdate": "01 June 1801",
-        "death": "29 August 1877",
-        "length": 30,
-        "order": 2,
-        "birthplace": "Vermont",
-        "numofchildren": 56,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/brigham-young-82908-gallery.jpg"
+        "name": "El Leoncito",
+        "phone": "+1(321) 267-1159",
+        "address": "4280 S Washington Ave, Titusville, FL 32780",
+        "website": "https://elleoncito.com/",
+        "imageurl": "https://elleoncito.com/imgs/logo.png",
+        "membership": "4"
       },
       {
-        "name": "John",
-        "lastname": "Taylor",
-        "birthdate": "01 November 1808",
-        "death": "25 July 1887",
-        "length": 6,
-        "order": 3,
-        "birthplace": "England",
-        "numofchildren": 34,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/john-taylor-82909-gallery.jpg"
+        "name": "BurgerRobs",
+        "phone": "+1(407) 952-1621",
+        "address": "3486 S Hopkins Ave, Titusville, FL 32780",
+        "website": "http://www.burgerrobshq.com/",
+        "imageurl": "https://popmenucloud.com/cdn-cgi/image/width=1920,height=1920,format=auto,fit=scale-down/yulbvkjt/aed2d4cd-a541-4a50-b61b-03d5c1b4f4eb.png",
+        "membership": "1"
       },
       {
-        "name": "Wilford",
-        "lastname": "Woodruff",
-        "birthdate": "01 March 1807",
-        "death": "02 September 1898",
-        "length": 9,
-        "order": 4,
-        "birthplace": "Connecticut",
-        "numofchildren": 34,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/wilford-woodruff-82910-gallery.jpg"
+        "name": "Sonny's BBQ",
+        "phone": "+1(321) 385-2665",
+        "address": "2900 Cheney Hwy, Titusville, FL 32780",
+        "website": "https://www.sonnysbbq.com/",
+        "imageurl": "https://static.olocdn.net/img/sonnysbbq/logo/logo-wide.svg?v=1669673630",
+        "membership": "2"
       },
       {
-        "name": "Lorenzo",
-        "lastname": "Snow",
-        "birthdate": "03 April 1814",
-        "death": "19 October 1901",
-        "length": 3,
-        "order": 5,
-        "birthplace": "Ohio",
-        "numofchildren": 42,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lorenzo-snow-82911-gallery.jpg"
+        "name": "Sergio's Tacos",
+        "phone": "+1(321) 677-5124",
+        "address": "2900 Cheney Hwy, Titusville, FL 32780",
+        "website": "https://www.sergiostacosgrill.com/",
+        "imageurl": "https://www.sergiostacosgrill.com/ressources/images/22944036e7c5.png",
+        "membership": "2"
       },
       {
-        "name": "Joseph F.",
-        "lastname": "Smith",
-        "birthdate": "12 November 1838",
-        "death": "19 November 1918",
-        "length": 17,
-        "order": 6,
-        "birthplace": "Missouri",
-        "numofchildren": 48,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/joseph-f-smith-82912-gallery.jpg"
+        "name": "Casa Coquina",
+        "phone": "+1(321) 268-4653",
+        "address": "4010 Coquina Ave, Titusville, FL 32780",
+        "website": "https://www.casacoquina.com/",
+        "imageurl": "https://d2hzumlgxagx5r.cloudfront.net/1800cc30-f249-473e-9ded-500414dee47b.png",
+        "membership": "3"
       },
       {
-        "name": "Heber J.",
-        "lastname": "Grant",
-        "birthdate": "22 November 1856",
-        "death": "14 May 1945",
-        "length": 23,
-        "order": 7,
-        "birthplace": "Utah",
-        "numofchildren": 12,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/heber-j-grant-82913-gallery.jpg"
+        "name": "Titusville Civic Center",
+        "phone": "+1(321) 383-0254",
+        "address": "4220 S Hopkins Ave, Titusville, FL 32780",
+        "website": "https://titusvilleciviccenter.com/",
+        "imageurl": "https://img1.wsimg.com/isteam/ip/947e7165-750b-49d4-8710-44e8d44f6303/Civic%20Center%20Logo.jpg/:/rs=w:200,h:200,cg:true,m/cr=w:200,h:200/qt=q:95",
+        "membership": "3"
       },
       {
-        "name": "George A.",
-        "lastname": "Smith",
-        "birthdate": "4 April 1870",
-        "death": "4 April 1951",
-        "length": 6,
-        "order": 8,
-        "birthplace": "Utah",
-        "numofchildren": 3,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/george-albert-smith-82914-gallery.jpg"
+        "name": "Titusville Civic Center",
+        "phone": "+1(321) 300-4649",
+        "address": "4220 S Hopkins Ave, Titusville, FL 32780",
+        "website": "https://flooringandbath.com/",
+        "imageurl": "https://flooringandbath.com/wp-content/uploads/2020/12/cropped-IMG_8635-copy-2.jpg",
+        "membership": "3"
       },
       {
-        "name": "David O.",
-        "lastname": "McKay",
-        "birthdate": "8 September 1873",
-        "death": "18 January 1970",
-        "length": 19,
-        "order": 9,
-        "birthplace": "Utah",
-        "numofchildren": 7,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/david-o-mckay-82915-gallery.jpg"
+        "name": "Titusville Civic Center",
+        "phone": "+1(321) 300-4649",
+        "address": "4220 S Hopkins Ave, Titusville, FL 32780",
+        "website": "https://flooringandbath.com/",
+        "imageurl": "https://flooringandbath.com/wp-content/uploads/2020/12/cropped-IMG_8635-copy-2.jpg",
+        "membership": "3"
       },
       {
-        "name": "Joseph Fielding",
-        "lastname": "Smith",
-        "birthdate": "19 July 1876",
-        "death": "2 July 1972",
-        "length": 1,
-        "order": 10,
-        "birthplace": "Utah",
-        "numofchildren": 11,
-        "imageurl": "https://media.ldscdn.org/images/media-library/teachings-of-presidents-of-the-church/joseph-fielding-smith/joseph-fielding-smith-82916-gallery.jpg"
+        "name": "Playalinda Brewing Company",
+        "phone": "+1(321) 567-5974",
+        "address": "5220 S Washington Ave, Titusville, FL 32780",
+        "website": "https://www.playalindabrewingcompany.com/",
+        "imageurl": "https://www.playalindabrewingcompany.com/wp-content/uploads/2019/02/playalinda-logo.png",
+        "membership": "2"
       },
       {
-        "name": "Harold B.",
-        "lastname": "Lee",
-        "birthdate": "28 March 1899",
-        "death": "26 December 1973",
-        "length": 1,
-        "order": 11,
-        "birthplace": "Idaho",
-        "numofchildren": 2,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/harold-b-lee-37763-gallery.jpg"
+        "name": "Secure Fence and Rail",
+        "phone": "+1(321) 338-1289",
+        "address": "2300 Columbia Blvd, Titusville, FL 32780",
+        "website": "https://www.securefenceandrail.com/",
+        "imageurl": "https://www.securefenceandrail.com/wp-content/uploads/2016/06/logo.png",
+        "membership": "2"
       },
       {
-        "name": "Spencer W.",
-        "lastname": "Kimball",
-        "birthdate": "28 March 1895",
-        "death": "5 November 1985",
-        "length": 12,
-        "order": 12,
-        "birthplace": "Utah",
-        "numofchildren": 4,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/spencer-w-kimball-82918-gallery.jpg"
-      },
-      {
-        "name": "Ezra Taft",
-        "lastname": "Benson",
-        "birthdate": "4 August 1899",
-        "death": "30 May 1994",
-        "length": 9,
-        "order": 13,
-        "birthplace": "Idaho",
-        "numofchildren": 6,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-ezra-taft-benson-83244-gallery.jpg"
-      },
-      {
-        "name": "Howard W.",
-        "lastname": "Hunter",
-        "birthdate": "14 November 1907",
-        "death": "3 March 1995",
-        "length": 1,
-        "order": 14,
-        "birthplace": "Idaho",
-        "numofchildren": 3,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/howard-w-hunter-82921-gallery.jpg"
-      },
-      {
-        "name": "Gordon B.",
-        "lastname": "Hinckley",
-        "birthdate": "23 June 1910",
-        "death": "27 January 2008",
-        "length": 13,
-        "order": 15,
-        "birthplace": "Utah",
-        "numofchildren": 5,
-        "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/lds-president-gordon-b-hinckley-83335-gallery.jpg"
-      },
-      {
-        "name": "Thomas S.",
-        "lastname": "Monson",
-        "birthdate": "21 August 1927",
-        "death": "2 January 2018",
-        "length": 10,
-        "order": 16,
-        "birthplace": "Utah",
-        "numofchildren": 3,
-        "imageurl": "https://media.ldscdn.org/images/media-library/church-leadership/first-presidency-and-quorum-of-the-twelve-apostles/president-thomas-s-monson-lds-560823-gallery.jpg"
-      },
-      {
-        "name": "Russell M.",
-        "lastname": "Nelson",
-        "birthdate": "9 September 1924",
-        "death": null,
-        "length": 2,
-        "order": 17,
-        "birthplace": "Utah",
-        "numofchildren": 10,
-        "imageurl": "https://media.ldscdn.org/images/media-library/church-leadership/first-presidency-and-quorum-of-the-twelve-apostles/russell-nelson-official-portrait-2018-2044670-gallery.jpg"
+        "name": "The Great Outdoors",
+        "phone": "+1(800) 621-2267",
+        "address": "125 Plantation Drive, Titusville, Florida 32780 ",
+        "website": "https://www.tgoresort.com/",
+        "imageurl": "https://www.tgoresort.com/wp-content/uploads/elementor/thumbs/TGO_notagline-ozyvygjdi49sdy864bnhph2dzv0qcsp4jkqmbgcsqq.png",
+        "membership": "2"
       }
     ]
   }
