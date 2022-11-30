@@ -463,9 +463,6 @@ textarea {
 
 /*----------- Directory --------------*/
 
-
-
-
 main .grid img {
     height: 75px;
     max-width: 100%;
@@ -480,6 +477,9 @@ main .grid img {
     background-color: var(--footer);
     color: white;
     border-radius: 10px;
+}
+main .grid, .list {
+    text-align: center;
 }
 
 article,
@@ -504,4 +504,35 @@ section {
 
 .grid p {
     margin: 10px;
+}
+
+.list {
+    display:flex;
+    flex-direction:column;
+}
+
+.list section {
+    display: flex;
+    flex-direction:column;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 2rem;
+    padding: 0.25rem;
+    border: 1px solid 
+}
+
+.list section > * {
+    margin: 0 1rem;
+}
+
+.list section img {
+    display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+    background-color: #bed;
 }

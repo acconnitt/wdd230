@@ -51,11 +51,14 @@ getBusinessCard();
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
+const display2 = document.querySelector("main");
 
 gridbutton.addEventListener("click", () => {
 	// example using arrow function
 	display.classList.add("grid");
 	display.classList.remove("list");
+    display2.classList.add("grid");
+	display2.classList.remove("list");
 });
 
 listbutton.addEventListener("click", showList); // example using defined function
@@ -63,4 +66,6 @@ listbutton.addEventListener("click", showList); // example using defined functio
 function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
+    display2.classList.add("list");
+	display2.classList.remove("grid");
 }
