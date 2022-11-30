@@ -466,12 +466,12 @@ textarea {
 
 
 
-main .article-content img {
+main .grid img {
     height: 75px;
     max-width: 100%;
     margin: 1rem;
-    background-color: darkslategray;
-    border-radius: 30%;
+    background-color: rgb(16, 137, 103);
+    border-radius:30%;
 }
 
 .content button {
@@ -488,7 +488,7 @@ section {
 }
 
 
-.article-content section {
+.grid section {
     border: .5rem solid var(--navigation);
     padding: 0.5rem;
     background-color: var(--footer);
@@ -498,12 +498,10 @@ section {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.article-content h2 {
+.grid h2 {
     text-transform: uppercase;
 }
 
-.article-content p {
+.grid p {
     margin: 10px;
 }
-
-

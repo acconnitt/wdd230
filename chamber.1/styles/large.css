@@ -143,9 +143,38 @@
     /* DISCOVERY PAGE */
     /* ************** */
 
-    main .article-content {
+    main .grid {
         grid-column-start: 2;
         grid-column-end: 4;
         text-align: center;
+    }
+
+    .list {
+        display: flex;
+        flex-direction:row;
+    }
+    
+    .list section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+    }
+    
+    .list section > * {
+        margin: 0 1rem;
+    }
+    
+    .list section img {
+        display: none; /* smaller viewports only */
+    }
+    
+    .list section h3 {
+        font-size: 1rem;
+        font-family: Roboto, Helvetica, sans-serif;
+    }
+    
+    .list section:nth-child(even) {
+        background-color: #bed;
     }
 }

@@ -150,7 +150,7 @@ LARGE_SCREEN -- 1201px and more —  Extra large screens, TV...
     /* DISCOVERY PAGE */
     /* ************** */
 
-    main .article-content {
+    main .grid {
         grid-column-start: 1;
         grid-column-end: 2;
         text-align: center;
