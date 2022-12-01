@@ -265,14 +265,27 @@ The Join section*/
 .grid-nested {
     width: 100%;
     height: 20rem;
-    border: 2px solid rgb(128, 0, 100);
+    border: .5rem solid var(--navigation);
     padding: 1rem;
+    border-radius: 15%;
 }
 
 /* Hiding last spotlight 3 section*/
 .grid-nested:last-child {
     display: none;
     /* visibility: hidden; */
+    position: relative;
+}
+
+.grid-nested {
+    text-align: center;
+}
+
+.spotlight-img {
+    
+    padding: 1rem;
+    width: 65%;
+    margin: 1rem;
 }
 
 .footer-col {
@@ -467,9 +480,9 @@ main .grid img {
     height: 75px;
     max-width: 100%;
     margin: 1rem;
-    background-color:;
+    background-color: ;
     border-radius: 5%;
-    padding:.5rem;
+    padding: .5rem;
 }
 
 .content button {
@@ -527,7 +540,6 @@ section {
 
 .list section img {
     display: none;
-    /* smaller viewports only */
 }
 
 .list section h3 {
@@ -540,11 +552,7 @@ section {
 }
 
 
-iframe {}
-
-
-
-
+/*----------- Directory --------------*/
 
 iframe {
     width: 100%;

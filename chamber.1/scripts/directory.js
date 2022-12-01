@@ -48,6 +48,9 @@ function displayBusinesses(business) {
 
 getBusinessCard();
 
+
+
+// CHANGE GRID TO LIST & VICEVERSA
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
@@ -69,3 +72,4 @@ function showList() {
     display2.classList.add("list");
 	display2.classList.remove("grid");
 }
+
